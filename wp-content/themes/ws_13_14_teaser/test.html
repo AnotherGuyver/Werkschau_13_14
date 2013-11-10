@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	#triangle {
+		background: #dde;
+		clip-path: url('#clip-triangle');
+		height: 45px;
+		width: 50px;
+	}
+</style>
+<div id="triangle">
+	dd
+</div>
+
+<svg id="svg-defs">
+	<defs>	
+		<clipPath id="clip-triangle-small-up">
+			<polygon points="0,45 25,0 50,45 "/>
+		</clipPath>
+	</defs>
+</svg>
+
+<svg id="svg-defs">
+	<defs>	
+		<clipPath id="clip-triangle-big-up">
+			<polygon points="0,90 50,0 100,90 "/>		
+		</clipPath>
+	</defs>
+</svg>
+</body>
+</html>

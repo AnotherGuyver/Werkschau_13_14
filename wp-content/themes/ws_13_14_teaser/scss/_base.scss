@@ -1,0 +1,39 @@
+/*
+Theme Name: ws_13_14
+Theme URI: http://werkschau.hs-augsburg.de/ws_13_14/
+Description: ws_13_14 Teaser
+Author: Werkschau
+Author URI: http://werkschau.hs-augsburg.de/ws_13_14/
+Version: 0.01
+Tags: werkschau, teaser
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+$up-small: url('img/triangles/up-small.svg');
+$up-big: url(img/triangles/up-big.svg);
+$up-extended: url(img/triangles/up-extended.svg);
+$down-small: url(img/triangles/down-small.svg);
+$down-big: url(img/triangles/down-big.svg);
+$down-extended: url(img/triangles/down-extended.svg);
+
+
+$small-height: 45px;
+$small-width: 50px;
+$big-height: 2 * $small-height;
+$big-width: 2 * $small-width;
+$extended-height: 2 * $big-height;
+$extended-width: 2 * $big-width;
+
+/* MIXINS */
+@mixin triangle($image){ 
+	-webkit-mask-box-image: $image;
+}
+
+@mixin trans($duration){
+	-webkit-transition: all $duration ease-in-out;
+	-ms-transition: all $duration ease-in-out;
+	-o-transition: all $duration ease-in-out;
+}
+
+/*/ MIXINS /*/ 

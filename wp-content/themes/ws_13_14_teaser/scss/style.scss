@@ -1,9 +1,169 @@
-/*
-Theme Name: ws_13_14
-Theme URI: http://werkschau.hs-augsburg.de/ws_13_14/
-Description: ws_13_14 Teaser
-Author: Werkschau
-Author URI: http://werkschau.hs-augsburg.de/ws_13_14/
-Version: 0.01
-Tags: werkschau, teaser
-*/
+@import 'base';
+@import 'compass';
+
+/* GENERAL */
+body,
+html {
+	height: 100%;
+	width: 100%;
+	font-family: "Open Sans";
+	font-size: 10px;
+}
+
+svg {
+	width: 0;
+	height: 0;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	width: 50px;
+	height: 45px;
+}
+
+#scene,
+#wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+background-color: #ffffff; // Old browsers
+@include filter-gradient(#ffffff, #f2f2f2, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(center, ellipse cover,  #ffffff 76%,#f2f2f2 100%));
+}
+/*/ GENERAL /*/
+
+/* CLASSES */
+.triangle {
+	text-align: center;
+	position: absolute;
+	@include trans(200ms);
+
+	&.up.small {
+		@include triangle($up-small);
+	}
+
+	&.up.big {
+		@include triangle($up-big);
+	}
+
+	&.up.extended {
+		@include triangle($up-extended);
+	}
+
+	&.down.small {
+		@include triangle($down-small);
+	}
+
+	&.down.big {
+		@include triangle($down-big);
+	}
+
+	&.down.extended {
+		@include triangle($down-extended);
+	}
+
+	&.small {
+		height: $small-height;
+		width: $small-width;
+	}
+
+	&.big {
+		height: $big-height;
+		width: $big-width;
+	}
+
+	&.extended {
+		height: $extended-height;
+		width: $extended-width;
+		z-index: 5;
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&.up .message {
+		bottom: 0;
+	}
+
+	&.down .message {
+		top: 0;
+	}
+
+	.message {
+		position: absolute;
+		height: auto;
+		min-width: 100%;
+		padding: 3px 18px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		color: #fff;
+		font-weight: 700;
+	}
+
+	.category {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: table;
+		text-align: center;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		.circle-wrapper {
+			
+			display: table-cell;
+			vertical-align: middle;
+
+			text-align: center;
+	
+			.circle {
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				line-height: 50px;
+				margin: auto;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.Web {
+	background: #ed2a2a;
+}
+
+.Print {
+	background: #5c89f0;
+}
+
+.Foto {
+	background: #bfea3d;
+}
+
+.Film {
+	background: #f4c82e;
+}
+/*/ CLASSES /*/ 
+
+
+/* TRIANGLE LOGIC */
+.triangle {
+	&.small,
+	&.big {
+		img,
+		.category,
+		.message {
+			display: none;
+		}
+	}
+}
+/*/ TRIANGLE LOGIC /*/
