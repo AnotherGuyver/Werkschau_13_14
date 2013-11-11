@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 /*
 Theme Name: ws_13_14
 Theme URI: http://werkschau.hs-augsburg.de/ws_13_14/
@@ -16,7 +16,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "Helvetica Neue", "Helvetica Neue CY", "Open Sans", Arial;
+  font-family: "Source Sans Pro", "Helvetica Neue" Arial;
   font-size: 10px;
 }
 
@@ -131,7 +131,7 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
 }
 /* line 113, scss/style.scss */
 .triangle .category {
