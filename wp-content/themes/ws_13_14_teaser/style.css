@@ -280,17 +280,18 @@ body {
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-size: 14px;
   text-align: center;
 }
-/* line 262, scss/style.scss */
+/* line 263, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="text"] {
   border: 1px solid #efefef;
 }
-/* line 266, scss/style.scss */
+/* line 267, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="submit"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="submit"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="submit"],
