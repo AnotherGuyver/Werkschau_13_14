@@ -1,6 +1,21 @@
-</ul>
-</div>
+	<li id="cn-newsletter-btn" class="layer" data-depth="0">
+		<a href="javascript:" id="show-newsletter-btn">BLEIB AUF DEM LAUFENDEN!</a>
+	</li>
+	<li id="cn-ol-newsletter" class="layer" data-depth="0.1">
+		<div id="in-ol-newsletter">
+			<div id="in-cn-newsletter">
+				<a href="javascript:" id="close-nesletter-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/close.svg" alt="" id="close-newsletter-btn"></a>
+				<div id="newsletter-title">NEWSLETTER ANMELDUNG</div>
+				<div id="newsletter-text">
+					Hier erfährst du alle Neuigkeiten zur Werkschau! Von unseren neuesten Fortschritten bis zu den aktuellen Terminen. Deine Daten werden nicht an dritte weitergegeben - versprochen ;)
+				</div>
+				<?php echo yksemeProcessSnippet('0a387e60d3'); ?>	
+			</div>
+		</div>
+	</li>
 
+	</ul>
+</div>
 <style>
 .triangle.up.small {
 	clip-path: url(#clip-triangle-small-up);
@@ -51,6 +66,7 @@
 </svg>
 <script src="<?php echo get_template_directory_uri() . '/js/lib/jquery.parallax.min.js' ?>"></script>
 <script>
+( function( $ ){
 	$('#scene').parallax({
 		'calibrateX': true,
 		'calibrateY': true,
@@ -59,6 +75,7 @@
 		'scalarX'	: 10,
 		'scalarY'	: 10,
 	});
+})( jQuery );
 </script>
 
 </body>

@@ -12,8 +12,7 @@ if( $my_query->have_posts() ) {
 			<div class="category">
 				<div class="circle-wrapper">
 					<div class="circle <?php echo custom_taxonomies_terms_links(); ?>">
-						<?php echo custom_taxonomies_terms_links(); ?>
-						
+						<?php echo custom_taxonomies_terms_links(); ?>	
 					</div>
 				</div>
 			</div>
