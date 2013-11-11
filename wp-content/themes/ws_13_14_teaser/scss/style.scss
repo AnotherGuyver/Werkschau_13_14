@@ -167,6 +167,23 @@ background-color: #ffffff; // Old browsers
 		}
 	}
 }
+
+.logo {
+
+	z-index: -10;
+
+	#logo {
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		left: 50%;
+		top: 50%;
+		margin-left: -60px;
+		margin-top: -60px;
+		z-index: -2;
+	}
+
+}
 /*/ TRIANGLE LOGIC /*/
 
 /* NEWSLETTER */
@@ -186,7 +203,8 @@ background-color: #ffffff; // Old browsers
 
 	#show-newsletter-btn {
 		color: #000;
-		font-weight: 700;
+		font-weight: 400;
+		text-decoration: none;
 	}
 
 }
