@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<div class="message <?php echo custom_taxonomies_terms_links(); ?>">
-					<?php echo strip_tags(get_the_content()); ?>
+					<?php echo strip_tags(get_the_title()); ?>
 				</div>
 			</div>
 	  	<!-- TEMPLATE FOR TRIANGLE ENDS HERE -->

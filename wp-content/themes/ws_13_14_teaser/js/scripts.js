@@ -23,30 +23,16 @@ jQuery.noConflict();
 			var isBig = $(this).hasClass("big");
 			var offX, offY;
 
-			if(!isBig){
-				// small
-				offX = 75;
-				offY = 67;
-				$(this).parent().css({
-					'width':100,
-					'height':90
-				});
-			} else {
-				offX = 50;
-				offY = 45;
-				$(this).parent().css({
-					'width':50,
-					'height':45
-				});
-			}
-
-
 			$(this).on('mouseenter mouseleave', function(){
-				$('#squares').isotope('reLayout');
-
 				$(this).toggleClass("expand");
-
 			})
+
+			$(this).on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(){
+				$("#squares").isotope('reLayout');
+				console.log("re");
+			})
+
+
 
 
 		});
@@ -57,5 +43,9 @@ jQuery.noConflict();
 			'height':30,
 			'top':'auto',
 		});
+
+
+		
+
 	});
 })( jQuery );
