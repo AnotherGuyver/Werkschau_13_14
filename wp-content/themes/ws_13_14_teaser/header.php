@@ -9,4 +9,3 @@
 <body>
 
 <div id="wrapper">
-	<ul id="scene">

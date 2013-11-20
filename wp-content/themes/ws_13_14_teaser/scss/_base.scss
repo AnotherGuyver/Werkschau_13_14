@@ -9,24 +9,22 @@ Tags: werkschau, teaser
 */
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-$up-small: url('img/triangles/up-small.svg');
-$up-big: url(img/triangles/up-big.svg);
-$up-extended: url(img/triangles/up-extended.svg);
-$down-small: url(img/triangles/down-small.svg);
-$down-big: url(img/triangles/down-big.svg);
-$down-extended: url(img/triangles/down-extended.svg);
+
+$green-square: url('img/squares/bg_green.jpg');
+$red-square: url('img/squares/bg_red.jpg');
+$yellow-square: url('img/squares/bg_yellow.jpg');
+$purple-square: url('img/squares/bg_purple.jpg');
 
 
-$small-height: 45px;
-$small-width: 50px;
-$big-height: 2 * $small-height;
-$big-width: 2 * $small-width;
-$extended-height: 2 * $big-height;
-$extended-width: 2 * $big-width;
+$small-size: 50px;
+$big-size: 2*$small-size;
+$expanded-size: 4*$small-size;
 
 /* MIXINS */
-@mixin triangle($image){ 
-	-webkit-mask-box-image: $image;
+@mixin square($image){ 
+	background:transparent $image left top no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 @mixin trans($duration){

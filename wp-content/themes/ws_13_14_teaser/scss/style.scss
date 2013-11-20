@@ -10,26 +10,15 @@ html {
 	font-size: 10px;
 }
 
-svg {
-	width: 0;
-	height: 0;
-	float: left;
-}
 
-ul, li {
-	padding: 0;
-	margin: 0;
-}
-
-li {
-	width: 50px;
-	height: 45px;
-}
-
-#scene,
 #wrapper {
 	height: 100%;
 	width: 100%;
+}
+
+#squares {
+	width: 100%;
+	height: 100%;
 }
 
 body {
@@ -49,138 +38,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*/ GENERAL /*/
 
 /* CLASSES */
-.triangle {
-	text-align: center;
-	position: absolute;
-	@include trans(200ms);
-
-	&.up.small {
-		@include triangle($up-small);
-	}
-
-	&.up.big {
-		@include triangle($up-big);
-	}
-
-	&.up.extended {
-		@include triangle($up-extended);
-	}
-
-	&.down.small {
-		@include triangle($down-small);
-	}
-
-	&.down.big {
-		@include triangle($down-big);
-	}
-
-	&.down.extended {
-		@include triangle($down-extended);
-	}
-
-	&.small {
-		height: $small-height;
-		width: $small-width;
-	}
-
-	&.big {
-		height: $big-height;
-		width: $big-width;
-	}
-
-	&.extended {
-		height: $extended-height;
-		width: $extended-width;
-		z-index: 5;
-	}
-
-	img {
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-
-	&.up .message {
-		bottom: 0;
-	}
-
-	&.down .message {
-		top: 0;
-	}
-
-	.message {
-		position: absolute;
-		height: auto;
-		min-width: 100%;
-		padding: 3px 18px;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		color: #fff;
-		font-weight: 400;
-		font-size: 12px;
-	}
-
-	.category {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		display: table;
-		text-align: center;
-		font-weight: 700;
-		text-transform: uppercase;
-
-		.circle-wrapper {
-			
-			display: table-cell;
-			vertical-align: middle;
-
-			text-align: center;
-	
-			.circle {
-				width: 50px;
-				height: 50px;
-				border-radius: 25px;
-				line-height: 50px;
-				margin: auto;
-				color: #fff;
-			}
-		}
-	}
-}
-
-.Web {
-	background: #ed2a2a;
-}
-
-.Print {
-	background: #5c89f0;
-}
-
-.Foto {
-	background: #bfea3d;
-}
-
-.Film {
-	background: #f4c82e;
-}
-/*/ CLASSES /*/ 
-
-
-/* TRIANGLE LOGIC */
-.triangle {
-	&.small,
-	&.big {
-		img,
-		.category,
-		.message {
-			display: none;
-		}
-	}
-}
 
 .logo {
 
-	z-index: -10;
 
 	#logo {
 		position: absolute;
@@ -190,11 +50,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		top: 50%;
 		margin-left: -60px;
 		margin-top: -60px;
-		z-index: -2;
 	}
 
 }
-/*/ TRIANGLE LOGIC /*/
+/*/ CLASSES /*/
+
+
+/* SQUARE LOGIC */
+.square {
+	@include trans_all_browsers(100ms);
+
+	.attachment-square-thumb,
+	.message {
+		display: none;
+	}
+
+	&.small {
+		width: $small-size;
+		height: $small-size;
+	}
+
+	&.big {
+		width: $big-size;
+		height: $big-size;
+	}
+
+	&.expand {
+		width: $expanded-size;
+		height: $expanded-size;
+	}
+
+	&.Print {
+		@include square($green-square);
+	}
+
+	&.Web {
+		@include square($purple-square);
+	}
+
+	&.Film {
+		@include square($red-square);
+	}
+
+	&.Foto {
+		@include square($yellow-square);
+	}
+
+
+}
+
+
+/*/ SQUARE LOGIC /*/
 
 /* NEWSLETTER */
 
