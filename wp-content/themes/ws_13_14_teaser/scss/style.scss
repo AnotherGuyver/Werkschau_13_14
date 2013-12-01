@@ -79,29 +79,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	cursor: pointer;
 	overflow: hidden;
 
+	&.not-clickable {
+		cursor: default;
+	}
+
 	&.Print {
 		// yellow
-		background-image: url(img/squares/yellow_big.jpg);
+		background-image: $print-image;
 	}
 
 	&.Web {
 		// orange
-		background-image: url(img/squares/orange_big.jpg);
+		background-image: $web-image;
 	}
 
 	&.Film {
 		// red
-		background-image: url(img/squares/red_big.jpg);
+		background-image: $film-image;
 	}
 
 	&.Foto {
 		// torquise
-		background-image: url(img/squares/torquise_big.jpg);
+		background-image: $foto-image;
 	}
 
 	&.Installation {
 		// mint
-		background-image: url(img/squares/mint_big.jpg);
+		background-image: $installation-image;
 	}
 
 	&.small,
@@ -184,8 +188,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		box-sizing: border-box;
 
 		&.seconds {
-			.countdown-inner {
-				.countdown-content {
+			.info-inner {
+				.info-content {
 					.countdown-number {
 						font-size: 42px;
 					}
@@ -193,15 +197,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			}
 		}
 
-		.countdown-inner {
+		.info-inner {
 			display: table;
 			height: 100%;
 			width: 100%;
-			text-align: left;
+			text-align: center;
 			vertical-align: middle;
-			padding: 0 20px;
 
-			.countdown-content {
+			.info-content {
 				display: table-cell;
 				vertical-align: middle;
 

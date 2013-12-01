@@ -15,6 +15,13 @@ $small-size: 50px;
 $big-size: 2*$small-size;
 $expanded-size: 4*$small-size;
 
+
+$print-image: url(img/squares/yellow_big.jpg);
+$web-image: url(img/squares/orange_big.jpg);
+$film-image: url(img/squares/red_big.jpg);
+$foto-image: url(img/squares/torquise_big.jpg);
+$installation-image: url(img/squares/mint_big.jpg);
+
 /* MIXINS */
 @mixin square(){ 
 	background-repeat: no-repeat;

@@ -614,3 +614,15 @@
 2013-12-01 14:31:19 overwrite ../style.css 
 2013-12-01 14:31:55 identical ../style.css 
 2013-12-01 14:35:57 overwrite ../style.css 
+2013-12-01 14:43:09 overwrite ../style.css 
+2013-12-01 14:44:44 overwrite ../style.css 
+2013-12-01 14:46:39 overwrite ../style.css 
+2013-12-01 14:46:46 identical ../style.css 
+2013-12-01 14:47:29 overwrite ../style.css 
+2013-12-01 14:48:06 overwrite ../style.css 
+2013-12-01 14:48:07 identical ../style.css 
+2013-12-01 14:48:31 overwrite ../style.css 
+2013-12-01 14:51:12     error style.scss (Line 88: Undefined variable: "$print-image".)
+2013-12-01 14:51:12 overwrite ../style.css 
+2013-12-01 14:51:18 overwrite ../style.css 
+2013-12-01 14:57:21 overwrite ../style.css 

@@ -28,8 +28,8 @@
 		}
 		?>
 		<div class="square not-clickable countdown seconds">
-			<div class="countdown-inner">
-				<div class="countdown-content">
+			<div class="info-inner">
+				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
 					<div class="bottom-message">MAL<br />BLINZELN</div>
@@ -37,8 +37,8 @@
 			</div>
 		</div>
 		<div class="square not-clickable countdown minutes">
-			<div class="countdown-inner">
-				<div class="countdown-content">
+			<div class="info-inner">
+				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
 					<div class="bottom-message">KAFFEES<br />TRINKEN</div>
@@ -46,8 +46,8 @@
 			</div>
 		</div>
 		<div class="square not-clickable countdown hours">
-			<div class="countdown-inner">
-				<div class="countdown-content">
+			<div class="info-inner">
+				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
 					<div class="bottom-message">FILME<br />SCHAUEN</div>
@@ -55,8 +55,8 @@
 			</div>
 		</div>
 		<div class="square not-clickable countdown days">
-			<div class="countdown-inner">
-				<div class="countdown-content">
+			<div class="info-inner">
+				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
 					<div class="bottom-message">KAFFEES<br />TRINKEN</div>
@@ -64,8 +64,17 @@
 			</div>
 		</div>
 		<div class="square not-clickable countdown weeks">
-			<div class="countdown-inner">
-				<div class="countdown-content">
+			<div class="info-inner">
+				<div class="info-content">
+					<div class="top-message">NOCH</div>
+					<div class="countdown-number"></div>MAL AUF INS
+					<div class="bottom-message">WOCHENENDE</div>
+				</div>
+			</div>
+		</div>
+		<div class="square not-clickable werkschau-logo">
+			<div class="info-inner">
+				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>MAL AUF INS
 					<div class="bottom-message">WOCHENENDE</div>
