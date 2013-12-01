@@ -95,12 +95,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 	&.Film {
 		// red
-		background-image: $red-image;
+		background-image: $blue-image;
 	}
 
 	&.Foto {
 		// torquise
-		background-image: $blue-image;
+		background-image: $red-image;
 	}
 
 	&.Installation {
@@ -176,27 +176,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 
 	&.seconds {
-		background: $yellow-image;
+		background: rgb(255, 178, 38);
 	}
 
 	&.minutes {
-		background: $red-image;
+		background: rgb(178, 73, 37);
 	}
 
 	&.hours {
-		background: $orange-image;
+		background: rgb(208, 115, 39);
 	}
 
 	&.days {
-		background: $blue-image;
+		background: rgb(184, 200, 233);
 	}
 
 	&.weeks {
-		background: $mint-image;
+		background: rgb(186, 205, 77);
 	}
 
 	&.werkschau-square {
-		background: $violett-image;
+		background: rgb(124, 53, 72);
 	}
 
 	&#newsletter {
@@ -251,13 +251,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 
 	&.countdown,
-	&.werkschau-square,
-	&#newsletter {
-		width: $expanded-size;
-		height: $expanded-size;
+	&.werkschau-square {
+		width: 150px;
+		height: 150px;
 		color: #fff;
-		font-size: 24px;
-		line-height: 40px;
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: 1px;
 
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -267,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 			.info-inner {
 				.info-content {
 					.countdown-number {
-						font-size: 42px;
+						font-size: 32px;
 					}
 				}
 			}
@@ -285,7 +285,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 				vertical-align: middle;
 
 				.countdown-number {
-					font-size: 50px;
+					font-size: 32px;
 					line-height: 60px;
 					font-weight: 700;
 				}
