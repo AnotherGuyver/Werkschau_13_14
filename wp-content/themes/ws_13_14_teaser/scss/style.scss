@@ -95,12 +95,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 	&.Film {
 		// red
-		background-image: $blue-image;
+		background-image: $red-image;
 	}
 
 	&.Foto {
 		// torquise
-		background-image: $red-image;
+		background-image: $blue-image;
 	}
 
 	&.Installation {
@@ -199,8 +199,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		background: $violett-image;
 	}
 
+	&#newsletter {
+		background: $blue-image;
+
+		.info-inner {
+			.info-content {
+				text-align: left;
+				padding: 20px;
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+
+				.yks-mailchimpFormDivRowField {
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					width: 100%;
+
+					.yks-require {
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						width: 100%;
+						background: none;
+						border: 1px solid white;
+						color: white;
+						padding: 5px;
+						font-size: 14px;
+					}
+				}
+
+				p {
+					margin: 0;
+				}
+
+
+				.yks-mailchimpFormDivSubmit {
+					margin-top: 0;
+					height: 30px;
+
+					input {
+						border: none;
+						background: white;
+						color: #C2D0EB;
+						font-weight: 700;
+						font-size: 14px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+
 	&.countdown,
-	&.werkschau-square {
+	&.werkschau-square,
+	&#newsletter {
 		width: $expanded-size;
 		height: $expanded-size;
 		color: #fff;
