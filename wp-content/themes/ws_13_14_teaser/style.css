@@ -194,44 +194,45 @@ body {
 }
 /* line 178, scss/style.scss */
 .square.seconds {
-  background: url(img/squares/yellow_big.jpg);
+  background: #ffb226;
 }
 /* line 182, scss/style.scss */
 .square.minutes {
-  background: url(img/squares/red_big.jpg);
+  background: #b24925;
 }
 /* line 186, scss/style.scss */
 .square.hours {
-  background: url(img/squares/orange_big.jpg);
+  background: #d07327;
 }
 /* line 190, scss/style.scss */
 .square.days {
-  background: url(img/squares/blue_big.jpg);
+  background: #b8c8e9;
 }
 /* line 194, scss/style.scss */
 .square.weeks {
-  background: url(img/squares/mint_big.jpg);
+  background: #bacd4d;
 }
 /* line 198, scss/style.scss */
 .square.werkschau-square {
-  background: url(img/squares/violett_big.jpg);
+  background: #7c3548;
 }
 /* line 203, scss/style.scss */
 .square.countdown, .square.werkschau-square {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   color: #fff;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 217, scss/style.scss */
+/* line 218, scss/style.scss */
 .square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number {
-  font-size: 42px;
+  font-size: 32px;
 }
-/* line 224, scss/style.scss */
+/* line 225, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -239,23 +240,23 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 231, scss/style.scss */
+/* line 232, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 235, scss/style.scss */
+/* line 236, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
-  font-size: 50px;
+  font-size: 32px;
   line-height: 60px;
   font-weight: 700;
 }
-/* line 241, scss/style.scss */
+/* line 242, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
 }
 
-/* line 251, scss/style.scss */
+/* line 252, scss/style.scss */
 .werkschau-square {
   width: 100px;
   height: 100px;
@@ -263,7 +264,7 @@ body {
 
 /*/ SQUARE LOGIC /*/
 /* NEWSLETTER */
-/* line 261, scss/style.scss */
+/* line 262, scss/style.scss */
 #cn-newsletter-btn {
   position: absolute;
   bottom: 0;
@@ -275,14 +276,14 @@ body {
   line-height: 30px;
   z-index: 10;
 }
-/* line 273, scss/style.scss */
+/* line 274, scss/style.scss */
 #cn-newsletter-btn #show-newsletter-btn {
   color: #000;
   font-weight: 400;
   text-decoration: none;
 }
 
-/* line 281, scss/style.scss */
+/* line 282, scss/style.scss */
 #cn-ol-newsletter {
   width: 100%;
   height: 100%;
@@ -290,16 +291,16 @@ body {
   text-align: center;
   z-index: 10;
 }
-/* line 288, scss/style.scss */
+/* line 289, scss/style.scss */
 #cn-ol-newsletter.stuckAway {
   margin-top: -6000px;
 }
-/* line 293, scss/style.scss */
+/* line 294, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 297, scss/style.scss */
+/* line 298, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter {
   position: relative;
   width: 400px;
@@ -310,7 +311,7 @@ body {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 307, scss/style.scss */
+/* line 308, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-title {
   font-weight: 700;
   font-size: 12px;
@@ -318,7 +319,7 @@ body {
   height: 60px;
   line-height: 30px;
 }
-/* line 315, scss/style.scss */
+/* line 316, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-text {
   width: 400px;
   margin: auto;
@@ -327,7 +328,7 @@ body {
   line-height: 1.6em;
   margin: 35px 0;
 }
-/* line 324, scss/style.scss */
+/* line 325, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #close-newsletter-btn {
   position: absolute;
   top: 15px;
@@ -335,7 +336,7 @@ body {
   height: 20px;
   width: 20px;
 }
-/* line 336, scss/style.scss */
+/* line 337, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow,
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField,
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit,
@@ -343,7 +344,7 @@ body {
   height: 35px;
   width: 100%;
 }
-/* line 340, scss/style.scss */
+/* line 341, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input,
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input,
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input,
@@ -356,14 +357,14 @@ body {
   font-size: 14px;
   text-align: center;
 }
-/* line 350, scss/style.scss */
+/* line 351, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="text"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="text"] {
   border: 1px solid #efefef;
 }
-/* line 354, scss/style.scss */
+/* line 355, scss/style.scss */
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="submit"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="submit"],
 #cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="submit"],
