@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 <div id="padding">
 	<div id="squares">
+		<div class="not-clickable werkschau-square square expand">
+			<div class="info-inner">
+				<div class="info-content">
+					<div class="werkschau-title">WERKSCHAU<br />13/14</div>
+					<div class="werkschau-date">7.2 bis 9.2</div>
+				</div>
+			</div>
+		</div>
 		<?php
 		global $post;
 		$my_query = getByType('achievement');
@@ -72,15 +80,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="square not-clickable werkschau-logo">
-			<div class="info-inner">
-				<div class="info-content">
-					<div class="top-message">NOCH</div>
-					<div class="countdown-number"></div>MAL AUF INS
-					<div class="bottom-message">WOCHENENDE</div>
-				</div>
-			</div>
-		</div>
+
 	</div>
 </div>
 

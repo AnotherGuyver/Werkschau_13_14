@@ -17,22 +17,14 @@
 <script>
 
 jQuery('#squares').isotope({
-	itemSelector 	: '.square',
+	itemSelector 	: ".square",
 	layoutMode	: 'perfectMasonry',
 	perfectMasonry: {
 	    layout: "vertical",      // Set layout as vertical/horizontal (default: vertical)
 	    columnWidth: 50,        // Set/prefer specific column width (liquid layout tries to prefer said width)
 	    rowHeight: 50,          // Set/prefer specific row height (liquid layout tries to prefer said height)
-
-	    liquid: false,            // Set layout as liquid (default: false)
-	    cols: 3,                 // Force to have x columns (default: null)
-	    rows: 1,                 // Force to have y rows (default: null)
-	    minCols: 3,              // Set min col count (default: 1)
-	    minRows: 3,              // Set min row count (default: 1)
-	    maxCols: 5,              // Set max col count (default: 9999)
-	    maxRows: 4               // Set max row count (default: 9999)
+	    cornerStampSelector: '.corner',
 	},
-	masonry: { columnWidth : 50 },
 	resizesContainer: false,
 	sortBy : 'random'
 });

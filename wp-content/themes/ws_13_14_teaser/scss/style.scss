@@ -85,27 +85,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 	&.Print {
 		// yellow
-		background-image: $print-image;
+		background-image: $yellow-image;
 	}
 
 	&.Web {
 		// orange
-		background-image: $web-image;
+		background-image: $violett-image;
 	}
 
 	&.Film {
 		// red
-		background-image: $film-image;
+		background-image: $blue-image;
 	}
 
 	&.Foto {
 		// torquise
-		background-image: $foto-image;
+		background-image: $red-image;
 	}
 
 	&.Installation {
 		// mint
-		background-image: $installation-image;
+		background-image: $mint-image;
 	}
 
 	&.small,
@@ -175,13 +175,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		}
 	}
 
-	&.countdown {
+	&.seconds {
+		background: $yellow-image;
+	}
+
+	&.minutes {
+		background: $red-image;
+	}
+
+	&.hours {
+		background: $orange-image;
+	}
+
+	&.days {
+		background: $blue-image;
+	}
+
+	&.weeks {
+		background: $mint-image;
+	}
+
+	&.werkschau-square {
+		background: $violett-image;
+	}
+
+	&.countdown,
+	&.werkschau-square {
 		width: $expanded-size;
 		height: $expanded-size;
 		color: #fff;
 		font-size: 24px;
 		line-height: 40px;
-		background: url("img/squares/blue_big.jpg");
 
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -213,12 +237,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 					line-height: 60px;
 					font-weight: 700;
 				}
+
+				.werkschau-title {
+					font-weight: 700;
+
+				}
 			}
 		}
 		
 	}
 }
 
+.werkschau-square {
+	width: $big-size;
+	height: $big-size;
+}
 
 /*/ SQUARE LOGIC /*/
 
