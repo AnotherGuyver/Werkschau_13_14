@@ -11,11 +11,19 @@ function register_all_styles(){
 
 function register_all_scripts(){
 	wp_register_script( 'jQuery', get_template_directory_uri() . '/js/lib/jquery.js', array(),true );
+	wp_register_script( 'nested', get_template_directory_uri() . '/js/lib/jquery.nested.js', array(),true );
+	wp_register_script( 'hover', get_template_directory_uri() . '/js/lib/jquery.hoverIntent.minified.js', array(),true );
+	wp_register_script( 'packery', get_template_directory_uri() . '/js/lib/packery.pkgd.min.js', array(),true );
 	wp_register_script( 'isotope', get_template_directory_uri() . '/js/lib/jquery.isotope.min.js', array(),true );
+	wp_register_script( 'isotopePerfectMasonry', get_template_directory_uri() . '/js/lib/jquery.isotope.perfectmasonry.js', array(),true );
 	wp_register_script( 'main-scripts', get_template_directory_uri() . '/js/scripts.js', array(), true );
 
 	wp_enqueue_script('jQuery');
+	wp_enqueue_script('nested');
+	wp_enqueue_script('hover');
+	wp_enqueue_script('packery');
 	wp_enqueue_script('isotope');
+	wp_enqueue_script('isotopePerfectMasonry');
 	wp_enqueue_script('main-scripts');
 }
 

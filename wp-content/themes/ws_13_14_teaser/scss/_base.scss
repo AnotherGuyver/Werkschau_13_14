@@ -10,36 +10,36 @@ Tags: werkschau, teaser
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 
-$green-square: url('img/squares/bg_green.jpg');
-$red-square: url('img/squares/bg_red.jpg');
-$yellow-square: url('img/squares/bg_yellow.jpg');
-$purple-square: url('img/squares/bg_purple.jpg');
-
 
 $small-size: 50px;
 $big-size: 2*$small-size;
 $expanded-size: 4*$small-size;
 
 /* MIXINS */
-@mixin square($image){ 
-	background:transparent $image left top no-repeat;
+@mixin square(){ 
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 
+@mixin bz(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 @mixin trans($duration){
-	-webkit-transition: all $duration ease-in-out;
-	-ms-transition: all $duration ease-in-out;
-	-o-transition: all $duration ease-in-out;
+	-webkit-transition: width height $duration ease-in-out;
+	-ms-transition: width height $duration ease-in-out;
+	-o-transition: width height $duration ease-in-out;
 }
 
 @mixin trans_all_browsers($duration){
-	-webkit-transition: all $duration ease-in-out;
-	-ms-transition: all $duration ease-in-out;
-	-o-transition: all $duration ease-in-out;
-	-moz-transition: all $duration ease-in-out;
-	transition: all $duration ease-in-out;
-
+-webkit-transition: all $duration ease-in-out;
+		-moz-transition: all $duration ease-in-out;
+        -ms-transition: all $duration ease-in-out;
+        -o-transition: all $duration ease-in-out;
+		transition: all $duration ease-in-out;
 }
 
 /*/ MIXINS /*/ 

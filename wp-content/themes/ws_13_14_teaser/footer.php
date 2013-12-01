@@ -1,6 +1,4 @@
-	<div id="cn-newsletter-btn" class="layer" data-depth="0">
-		<a href="javascript:" id="show-newsletter-btn">BLEIB AUF DEM LAUFENDEN!</a>
-	</div>
+
 	<div id="cn-ol-newsletter" class="layer" data-depth="0.03">
 		<div id="in-ol-newsletter">
 			<div id="in-cn-newsletter">
@@ -13,78 +11,42 @@
 			</div>
 		</div>
 	</div>
-	<div class="layer logo" data-depth="0.01">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="WERKSCHAU" id="logo">
-	</div>
 
 </div>
 
 <script>
 
-		jQuery.Isotope.prototype._getCenteredMasonryColumns = function() {
-
-		    this.width = this.element.width();
-
-		    var parentWidth = this.element.parent().width();
-
-		    var colW = this.options.masonry && this.options.masonry.columnWidth || // i.e. options.masonry && options.masonry.columnWidth
-
-		    this.$filteredAtoms.outerWidth(true) || // or use the size of the first item
-
-		    parentWidth; // if there's no items, use size of container
-
-		    var cols = Math.floor(parentWidth / colW);
-
-		    cols = Math.max(cols, 1);
-
-		    this.masonry.cols = cols; // i.e. this.masonry.cols = ....
-		    this.masonry.columnWidth = colW; // i.e. this.masonry.columnWidth = ...
-		};
-
-		jQuery.Isotope.prototype._masonryReset = function() {
-
-		    this.masonry = {}; // layout-specific props
-		    this._getCenteredMasonryColumns(); // FIXME shouldn't have to call this again
-
-		    var i = this.masonry.cols;
-
-		    this.masonry.colYs = [];
-		        while (i--) {
-		        this.masonry.colYs.push(0);
-		    }
-		};
-
-		jQuery.Isotope.prototype._masonryResizeChanged = function() {
-
-		    var prevColCount = this.masonry.cols;
-
-		    this._getCenteredMasonryColumns(); // get updated colCount
-		    return (this.masonry.cols !== prevColCount);
-		};
-
-		jQuery.Isotope.prototype._masonryGetContainerSize = function() {
-
-		    var unusedCols = 0,
-
-		    i = this.masonry.cols;
-		        while (--i) { // count unused columns
-		        if (this.masonry.colYs[i] !== 0) {
-		            break;
-		        }
-		        unusedCols++;
-		    }
-
-		    return {
-		        height: Math.max.apply(Math, this.masonry.colYs),
-		        width: (this.masonry.cols - unusedCols) * this.masonry.columnWidth // fit container to columns that have been used;
-		    };
-		};
-
 jQuery('#squares').isotope({
-	'itemSelector' 	: '.square',
-	'layoutMode'	: 'masonry',
-	'resizesContainer': false,
+	itemSelector 	: '.square',
+	layoutMode	: 'perfectMasonry',
+	perfectMasonry: {
+	    layout: "vertical",      // Set layout as vertical/horizontal (default: vertical)
+	    columnWidth: 50,        // Set/prefer specific column width (liquid layout tries to prefer said width)
+	    rowHeight: 50,          // Set/prefer specific row height (liquid layout tries to prefer said height)
+
+	    liquid: false,            // Set layout as liquid (default: false)
+	    cols: 3,                 // Force to have x columns (default: null)
+	    rows: 1,                 // Force to have y rows (default: null)
+	    minCols: 3,              // Set min col count (default: 1)
+	    minRows: 3,              // Set min row count (default: 1)
+	    maxCols: 5,              // Set max col count (default: 9999)
+	    maxRows: 4               // Set max row count (default: 9999)
+	},
+	masonry: { columnWidth : 50 },
+	resizesContainer: false,
+	sortBy : 'random'
 });
+
+/*
+var container = document.querySelector('#squares');
+var pckry = new Packery( container, {
+  // options
+  itemSelector: '.square',
+  gutter: 0,
+  columnWidth: '.square',
+  rowHeight: 200
+});
+*/
 </script>
 </body>
 </html>

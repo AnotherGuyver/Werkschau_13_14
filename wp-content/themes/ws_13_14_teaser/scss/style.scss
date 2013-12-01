@@ -11,6 +11,16 @@ html {
 }
 
 
+#wrapper,
+#padding {
+	@include bz();
+	overflow: hidden;
+}
+
+#squares {
+	overflow: auto;
+}
+
 #wrapper {
 	height: 100%;
 	width: 100%;
@@ -21,18 +31,24 @@ html {
 	height: 100%;
 }
 
+#padding {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 body {
 /*
 background-color: #ffffff; // Old browsers
 @include filter-gradient(#ffffff, #f2f2f2, horizontal); // IE6-9 fallback on horizontal gradient
 @include background-image(radial-gradient(center, ellipse cover,  #ffffff 76%,#f2f2f2 100%));
 */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%, rgba(0,0,0,0.1) 100%), url(img/bg.png); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(70%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1))), url(img/bg.png); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), url(img/bg.png); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), url(img/bg.png); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), url(img/bg.png); /* IE10+ */
-background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), url(img/bg.png); /* W3C */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%, rgba(0,0,0,0.1) 100%), rgb(235,235,232); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(70%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1))), rgb(235,235,232); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), rgb(235,235,232); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), rgb(235,235,232); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), rgb(235,235,232); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 70%,rgba(0,0,0,0.1) 100%), rgb(235,235,232); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 /*/ GENERAL /*/
@@ -56,14 +72,81 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*/ CLASSES /*/
 
 
-/* SQUARE LOGIC */
+/* SQUAwRE LOGIC */
 .square {
-	@include trans_all_browsers(100ms);
+	@include trans_all_browsers(150ms);
+	@include square();
+	cursor: pointer;
+	overflow: hidden;
 
-	.attachment-square-thumb,
-	.message {
-		display: none;
+	&.Print {
+		// yellow
+		background-image: url(img/squares/yellow_big.jpg);
 	}
+
+	&.Web {
+		// orange
+		background-image: url(img/squares/orange_big.jpg);
+	}
+
+	&.Film {
+		// red
+		background-image: url(img/squares/red_big.jpg);
+	}
+
+	&.Foto {
+		// torquise
+		background-image: url(img/squares/torquise_big.jpg);
+	}
+
+	&.Installation {
+		// mint
+		background-image: url(img/squares/mint_big.jpg);
+	}
+
+	&.small,
+	&.big {
+		.attachment-square-thumb,
+		.message,
+		.category {
+			display: none;
+		}
+	}
+
+	.message,
+	.category {
+		position: absolute;
+		line-height: 20px;
+		font-size: 10px;
+		font-weight: 700;
+		padding: 6px;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.message {
+		position: absolute;
+		bottom: 0;
+		height: auto;
+	}
+
+	.category {
+		position: absolute;
+		top: 0;
+		height: 20px;
+		text-transform: uppercase;
+	}
+
+	.attachment-square-thumb {
+		position: absolute;
+		height: 100%;
+		width: auto;
+	}
+
 
 	&.small {
 		width: $small-size;
@@ -78,25 +161,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	&.expand {
 		width: $expanded-size;
 		height: $expanded-size;
+
+		z-index: 20;
+
+		.message,
+		.category,
+		.attachment-square-thumb {
+			display: block;
+		}
 	}
 
-	&.Print {
-		@include square($green-square);
+	&.countdown {
+		width: $expanded-size;
+		height: $expanded-size;
+		color: #fff;
+		font-size: 24px;
+		line-height: 40px;
+		background: url("img/squares/blue_big.jpg");
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		&.seconds {
+			.countdown-inner {
+				.countdown-content {
+					.countdown-number {
+						font-size: 42px;
+					}
+				}
+			}
+		}
+
+		.countdown-inner {
+			display: table;
+			height: 100%;
+			width: 100%;
+			text-align: left;
+			vertical-align: middle;
+			padding: 0 20px;
+
+			.countdown-content {
+				display: table-cell;
+				vertical-align: middle;
+
+				.countdown-number {
+					font-size: 50px;
+					line-height: 60px;
+					font-weight: 700;
+				}
+			}
+		}
+		
 	}
-
-	&.Web {
-		@include square($purple-square);
-	}
-
-	&.Film {
-		@include square($red-square);
-	}
-
-	&.Foto {
-		@include square($yellow-square);
-	}
-
-
 }
 
 

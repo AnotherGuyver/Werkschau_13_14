@@ -1,9 +1,10 @@
 jQuery.noConflict();
 
+var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 
 (function( $ ) {
 	$(document).ready(function(){
-		$(".square").each(function(i,e){
+		$(".square").not('.not-clickable').each(function(i,e){
 			var square = e;
 /*
 			var ww = $(window).width();
@@ -23,19 +24,28 @@ jQuery.noConflict();
 			var isBig = $(this).hasClass("big");
 			var offX, offY;
 
-			$(this).on('mouseenter mouseleave', function(){
+			/*var toggle = function(){
 				$(this).toggleClass("expand");
-			})
+			};
+
+			$(this).hoverIntent({
+				over	:	toggle,
+				out		:	toggle,
+				timeout	:	700
+			});*/
+
+			$(this).bind('click',function(){
+				$(this).toggleClass('expand');
+				$('.expand').not($(this)).removeClass('expand');
+			});
 
 			$(this).on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(){
 				$("#squares").isotope('reLayout');
 				console.log("re");
 			})
-
-
-
-
 		});
+
+		init();
 
 		$('#cn-ol-newsletter').css({'display':'none'});
 		$('#cn-newsletter-btn').css({
@@ -44,8 +54,57 @@ jQuery.noConflict();
 			'top':'auto',
 		});
 
-
+		var calculateDateFunction = function(){ calculateDate( deadline ) };
 		
+		//calculateDateFunction(date);
+		var dateFunctionInterval = setInterval(calculateDateFunction, 1000);
 
+		$(window).resize(function(){
+			calculatePadding();
+		})
 	});
+
+	function calculateDate(deadline){
+		var today = new Date();
+		var rest = deadline - today;
+
+		var seconds 	= Math.floor( rest / ( 1000 ) );
+		var minutes 	= Math.floor( rest / ( 1000*60 ) );
+		var hours		= Math.floor( rest / ( 1000*60*60 ) );
+		var days		= Math.floor( rest / ( 1000*60*60*24 ) );
+		var weeks 		= Math.floor( rest / ( 1000*60*60*24*7 ) );
+
+		console.log("Sekunden:"+seconds+" Minuten:"+minutes+" Stunden:"+hours+" Tage:"+days+" Wochen:"+weeks);
+
+		updateDate(".seconds", seconds);
+		updateDate(".minutes", minutes);
+		updateDate(".hours", hours);
+		updateDate(".days", days);
+		updateDate(".weeks", weeks);
+	}
+
+	function updateDate(selector, newDate){
+		if( $(".countdown-number", selector).text() != newDate ){
+			$(".countdown-number", selector).text(newDate);
+			console.log("updated");
+		}
+	}
+
+	function calculatePadding(){
+		console.log( ( $(window).width() % 100) )/ 2;
+		var padding	= ( $(window).width() % 100 )/2;
+
+
+		$('#padding').css({
+			'padding' : Math.floor(padding)
+		});
+
+		$("#squares").isotope('reLayout');
+	}
+
+	function init(){
+		calculatePadding();
+		calculateDate(deadline);
+		$('#squares').css({'overflow-x':'hidden', 'overflow-y':'auto'});
+	}
 })( jQuery );
