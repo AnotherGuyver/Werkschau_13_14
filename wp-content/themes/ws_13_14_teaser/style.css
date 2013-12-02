@@ -23,7 +23,7 @@ Tags: werkschau, teaser
 @font-face {
   font-family: "Trade Gothic";
   font-weight: 700;
-  src: url("fonts/TradeGothicLTStd.otf-Bold");
+  src: url("fonts/TradeGothicLTStd-Bold.otf");
 }
 
 /* MIXINS */
@@ -306,7 +306,7 @@ body {
 .square.countdown, .square.werkschau-square {
   color: #fff;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 28px;
   letter-spacing: 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
