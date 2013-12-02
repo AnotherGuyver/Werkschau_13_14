@@ -316,11 +316,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 297, scss/style.scss */
-.square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number {
-  font-size: 23px;
-}
-/* line 304, scss/style.scss */
+/* line 295, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -328,23 +324,23 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 311, scss/style.scss */
+/* line 302, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 315, scss/style.scss */
+/* line 306, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 50px;
   font-weight: 700;
 }
-/* line 321, scss/style.scss */
+/* line 312, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
 }
 
-/* line 332, scss/style.scss */
+/* line 323, scss/style.scss */
 .werkschau-square,
 #newsletter {
   width: 200px;

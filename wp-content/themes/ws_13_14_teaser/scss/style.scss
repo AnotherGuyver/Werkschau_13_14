@@ -291,15 +291,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 
-		&.seconds {
-			.info-inner {
-				.info-content {
-					.countdown-number {
-						font-size: 23px;
-					}
-				}
-			}
-		}
 
 		.info-inner {
 			display: table;
@@ -313,7 +304,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 				vertical-align: middle;
 
 				.countdown-number {
-					font-size: 32px;
+					font-size: 30px;
 					line-height: 50px;
 					font-weight: 700;
 				}
