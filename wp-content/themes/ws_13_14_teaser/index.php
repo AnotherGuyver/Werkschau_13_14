@@ -40,7 +40,7 @@
 				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
-					<div class="bottom-message">MAL<br />BLINZELN</div>
+					<div class="bottom-message">HERZSCHLÄGE</div>
 				</div>
 			</div>
 		</div>
@@ -49,7 +49,7 @@
 				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
-					<div class="bottom-message">KAFFEES<br />TRINKEN</div>
+					<div class="bottom-message">KAFFEE<br />TRINKEN</div>
 				</div>
 			</div>
 		</div>
