@@ -106,5 +106,6 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 		calculatePadding();
 		calculateDate(deadline);
 		$('#squares').css({'overflow-x':'hidden', 'overflow-y':'auto'});
+		$('#0-0a387e60d3-email').attr('placeholder','Deine Email');
 	}
 })( jQuery );

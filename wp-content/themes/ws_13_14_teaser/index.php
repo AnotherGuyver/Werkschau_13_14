@@ -5,7 +5,7 @@
 			<div class="info-inner">
 				<div class="info-content">
 					<div class="werkschau-title">WERKSCHAU<br />13/14</div><br />
-					<div class="werkschau-date">7.2 bis 9.2</div>
+					<div class="werkschau-date">7. - 9. FEBRUAR 14</div>
 				</div>
 			</div>
 		</div>

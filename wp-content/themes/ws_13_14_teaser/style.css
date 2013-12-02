@@ -258,36 +258,72 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 230, scss/style.scss */
+/* line 231, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-success,
+.square#newsletter .info-inner .info-content .yks-error {
+  padding: 10px;
+  background: #AEC0E6;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 11px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 160px;
+}
+/* line 243, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-error {
+  background: #B14924;
+}
+/* line 247, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
-/* line 236, scss/style.scss */
+/* line 253, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField .yks-require {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  height: 30px;
   background: none;
   border: 1px solid white;
   color: white;
-  padding: 5px;
+  padding: 5px 10px 1px;
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* line 250, scss/style.scss */
+/* line 270, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField ::-webkit-input-placeholder {
+  color: white;
+}
+/* line 274, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/* line 278, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+/* line 282, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-ms-input-placeholder {
+  color: white;
+}
+/* line 287, scss/style.scss */
 .square#newsletter .info-inner .info-content p {
   margin: 0;
 }
-/* line 255, scss/style.scss */
+/* line 292, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit {
   margin-top: 0;
   height: 30px;
 }
-/* line 259, scss/style.scss */
+/* line 296, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit input {
   border: none;
   background: white;
@@ -298,7 +334,7 @@ body {
   width: 100%;
   line-height: 30px;
 }
-/* line 275, scss/style.scss */
+/* line 312, scss/style.scss */
 .square.countdown {
   width: 150px;
   height: 150px;
@@ -306,7 +342,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
 }
-/* line 284, scss/style.scss */
+/* line 321, scss/style.scss */
 .square.countdown, .square.werkschau-square {
   color: #fff;
   font-size: 18px;
@@ -316,7 +352,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 295, scss/style.scss */
+/* line 332, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -324,23 +360,25 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 302, scss/style.scss */
+/* line 339, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 306, scss/style.scss */
+/* line 343, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
   font-size: 30px;
   line-height: 50px;
   font-weight: 700;
 }
-/* line 312, scss/style.scss */
+/* line 349, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
 }
 
-/* line 323, scss/style.scss */
+/* line 362, scss/style.scss */
 .werkschau-square,
 #newsletter {
   width: 200px;
