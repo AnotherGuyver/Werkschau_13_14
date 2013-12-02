@@ -1,0 +1,379 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+/*
+Theme Name: ws_13_14
+Theme URI: http://werkschau.hs-augsburg.de/ws_13_14/
+Description: ws_13_14 Teaser
+Author: Werkschau
+Author URI: http://werkschau.hs-augsburg.de/ws_13_14/
+Version: 0.01
+Tags: werkschau, teaser
+*/
+/* MIXINS */
+/*/ MIXINS /*/
+/* GENERAL */
+/* line 6, scss/style.scss.REMOTE.84941.scss */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", "Helvetica Neue" Arial;
+  font-size: 10px;
+}
+
+/* line 15, scss/style.scss.REMOTE.84941.scss */
+#wrapper,
+#padding {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 20, scss/style.scss.REMOTE.84941.scss */
+#squares {
+  overflow: auto;
+}
+
+/* line 24, scss/style.scss.REMOTE.84941.scss */
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 29, scss/style.scss.REMOTE.84941.scss */
+#squares {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 34, scss/style.scss.REMOTE.84941.scss */
+#padding {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 40, scss/style.scss.REMOTE.84941.scss */
+body {
+  /*
+  background-color: #ffffff; // Old browsers
+  @include filter-gradient(#ffffff, #f2f2f2, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(radial-gradient(center, ellipse cover,  #ffffff 76%,#f2f2f2 100%));
+  */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%), #ebebe8;
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(70%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1))), #ebebe8;
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%), #ebebe8;
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%), #ebebe8;
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%), #ebebe8;
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%), #ebebe8;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#4d000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+/*/ GENERAL /*/
+/* CLASSES */
+/* line 61, scss/style.scss.REMOTE.84941.scss */
+.logo #logo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  top: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+/*/ CLASSES /*/
+/* SQUAwRE LOGIC */
+/* line 76, scss/style.scss.REMOTE.84941.scss */
+.square {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* line 82, scss/style.scss.REMOTE.84941.scss */
+.square.not-clickable {
+  cursor: default;
+}
+/* line 86, scss/style.scss.REMOTE.84941.scss */
+.square.Print {
+  background-image: url(img/squares/yellow_big.jpg);
+}
+/* line 91, scss/style.scss.REMOTE.84941.scss */
+.square.Web {
+  background-image: url(img/squares/violett_big.jpg);
+}
+/* line 96, scss/style.scss.REMOTE.84941.scss */
+.square.Film {
+  background-image: url(img/squares/blue_big.jpg);
+}
+/* line 101, scss/style.scss.REMOTE.84941.scss */
+.square.Foto {
+  background-image: url(img/squares/red_big.jpg);
+}
+/* line 106, scss/style.scss.REMOTE.84941.scss */
+.square.Installation {
+  background-image: url(img/squares/mint_big.jpg);
+}
+/* line 115, scss/style.scss.REMOTE.84941.scss */
+.square.small .attachment-square-thumb,
+.square.small .message,
+.square.small .category, .square.big .attachment-square-thumb,
+.square.big .message,
+.square.big .category {
+  display: none;
+}
+/* line 121, scss/style.scss.REMOTE.84941.scss */
+.square .message,
+.square .category {
+  position: absolute;
+  line-height: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 135, scss/style.scss.REMOTE.84941.scss */
+.square .message {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+}
+/* line 141, scss/style.scss.REMOTE.84941.scss */
+.square .category {
+  position: absolute;
+  top: 0;
+  height: 20px;
+  text-transform: uppercase;
+}
+/* line 148, scss/style.scss.REMOTE.84941.scss */
+.square .attachment-square-thumb {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+/* line 155, scss/style.scss.REMOTE.84941.scss */
+.square.small {
+  width: 50px;
+  height: 50px;
+}
+/* line 160, scss/style.scss.REMOTE.84941.scss */
+.square.big {
+  width: 100px;
+  height: 100px;
+}
+/* line 165, scss/style.scss.REMOTE.84941.scss */
+.square.expand {
+  width: 200px;
+  height: 200px;
+  z-index: 20;
+}
+/* line 173, scss/style.scss.REMOTE.84941.scss */
+.square.expand .message,
+.square.expand .category,
+.square.expand .attachment-square-thumb {
+  display: block;
+}
+/* line 178, scss/style.scss.REMOTE.84941.scss */
+.square.seconds {
+  background: #ffb226;
+}
+/* line 182, scss/style.scss.REMOTE.84941.scss */
+.square.minutes {
+  background: #b24925;
+}
+/* line 186, scss/style.scss.REMOTE.84941.scss */
+.square.hours {
+  background: #d07327;
+}
+/* line 190, scss/style.scss.REMOTE.84941.scss */
+.square.days {
+  background: #b8c8e9;
+}
+/* line 194, scss/style.scss.REMOTE.84941.scss */
+.square.weeks {
+  background: #bacd4d;
+}
+/* line 198, scss/style.scss.REMOTE.84941.scss */
+.square.werkschau-square {
+  background: #7c3548;
+}
+/* line 203, scss/style.scss.REMOTE.84941.scss */
+.square.countdown, .square.werkschau-square {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 218, scss/style.scss.REMOTE.84941.scss */
+.square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number {
+  font-size: 32px;
+}
+/* line 225, scss/style.scss.REMOTE.84941.scss */
+.square.countdown .info-inner, .square.werkschau-square .info-inner {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 232, scss/style.scss.REMOTE.84941.scss */
+.square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 236, scss/style.scss.REMOTE.84941.scss */
+.square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
+  font-size: 32px;
+  line-height: 60px;
+  font-weight: 700;
+}
+/* line 242, scss/style.scss.REMOTE.84941.scss */
+.square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
+  font-weight: 700;
+}
+
+/* line 252, scss/style.scss.REMOTE.84941.scss */
+.werkschau-square {
+  width: 100px;
+  height: 100px;
+}
+
+/*/ SQUARE LOGIC /*/
+/* NEWSLETTER */
+/* line 262, scss/style.scss.REMOTE.84941.scss */
+#cn-newsletter-btn {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  z-index: 10;
+}
+/* line 274, scss/style.scss.REMOTE.84941.scss */
+#cn-newsletter-btn #show-newsletter-btn {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 282, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  z-index: 10;
+}
+/* line 289, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter.stuckAway {
+  margin-top: -6000px;
+}
+/* line 294, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 298, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter {
+  position: relative;
+  width: 400px;
+  height: auto;
+  border: 1px solid #efefef;
+  margin: auto;
+  padding: 45px 30px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 308, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-title {
+  font-weight: 700;
+  font-size: 12px;
+  width: 100%;
+  height: 60px;
+  line-height: 30px;
+}
+/* line 316, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-text {
+  width: 400px;
+  margin: auto;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6em;
+  margin: 35px 0;
+}
+/* line 325, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #close-newsletter-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 20px;
+  width: 20px;
+}
+/* line 337, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p {
+  height: 35px;
+  width: 100%;
+}
+/* line 341, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input,
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+}
+/* line 351, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="text"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="text"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="text"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="text"] {
+  border: 1px solid #efefef;
+}
+/* line 355, scss/style.scss.REMOTE.84941.scss */
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="submit"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="submit"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="submit"],
+#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="submit"] {
+  background: orange;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/*/ NEWSLETTER /*/

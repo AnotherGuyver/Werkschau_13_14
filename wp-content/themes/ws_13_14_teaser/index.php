@@ -82,7 +82,6 @@
 		</div>
 		<div id="newsletter" class="square not-clickable expand">
 			<div class="info-inner">
-				<!--<a href="javascript:" id="close-nesletter-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/close.svg" alt="" id="close-newsletter-btn"></a>-->
 				<div class="info-content">
 					<div class="top-message">
 						BLEIB AUF DEM<br />LAUFENDEN
@@ -91,10 +90,6 @@
 						<?php echo yksemeProcessSnippet('0a387e60d3'); ?>	
 					</div>
 				</div>
-				<!--<div id="newsletter-text">
-					Hier erfährst du alle Neuigkeiten zur Werkschau! Von unseren neuesten Fortschritten bis zu den aktuellen Terminen. Deine Daten werden nicht an dritte weitergegeben - versprochen ;)
-				</div>-->
-
 			</div>
 		</div>
 

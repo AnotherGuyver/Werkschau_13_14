@@ -8,6 +8,24 @@ Author URI: http://werkschau.hs-augsburg.de/ws_13_14/
 Version: 0.01
 Tags: werkschau, teaser
 */
+@font-face {
+  font-family: "Trade Gothic";
+  font-weight: 400;
+  src: url("fonts/TradeGothicLTStd.otf");
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  font-weight: 300;
+  src: url("fonts/TradeGothicLTStd-Light.otf");
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  font-weight: 700;
+  src: url("fonts/TradeGothicLTStd.otf-Bold");
+}
+
 /* MIXINS */
 /*/ MIXINS /*/
 /* GENERAL */
@@ -16,7 +34,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "Source Sans Pro", "Helvetica Neue" Arial;
+  font-family: "Trade Gothic", "Source Sans Pro", "Helvetica Neue" Arial;
   font-size: 10px;
 }
 
@@ -118,11 +136,11 @@ body {
 }
 /* line 96, scss/style.scss */
 .square.Film {
-  background-image: url(img/squares/red_big.jpg);
+  background-image: url(img/squares/blue_big.jpg);
 }
 /* line 101, scss/style.scss */
 .square.Foto {
-  background-image: url(img/squares/blue_big.jpg);
+  background-image: url(img/squares/red_big.jpg);
 }
 /* line 106, scss/style.scss */
 .square.Installation {
@@ -194,47 +212,59 @@ body {
 }
 /* line 178, scss/style.scss */
 .square.seconds {
-  background: url(img/squares/yellow_big.jpg);
+  background: #ffb226;
 }
 /* line 182, scss/style.scss */
 .square.minutes {
-  background: url(img/squares/red_big.jpg);
+  background: #b24925;
 }
 /* line 186, scss/style.scss */
 .square.hours {
-  background: url(img/squares/orange_big.jpg);
+  background: #d07327;
 }
 /* line 190, scss/style.scss */
 .square.days {
-  background: url(img/squares/blue_big.jpg);
+  background: #b8c8e9;
 }
 /* line 194, scss/style.scss */
 .square.weeks {
-  background: url(img/squares/mint_big.jpg);
+  background: #bacd4d;
 }
 /* line 198, scss/style.scss */
 .square.werkschau-square {
-  background: url(img/squares/violett_big.jpg);
+  background: #7c3548;
 }
 /* line 202, scss/style.scss */
 .square#newsletter {
   background: url(img/squares/blue_big.jpg);
 }
-/* line 206, scss/style.scss */
+/* line 205, scss/style.scss */
+.square#newsletter .top-message {
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+/* line 211, scss/style.scss */
+.square#newsletter .mail-field {
+  position: absolute;
+  bottom: 20px;
+  width: 160px;
+}
+/* line 218, scss/style.scss */
 .square#newsletter .info-inner .info-content {
   text-align: left;
   padding: 20px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 212, scss/style.scss */
+/* line 224, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
-/* line 218, scss/style.scss */
+/* line 230, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField .yks-require {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -245,17 +275,18 @@ body {
   color: white;
   padding: 5px;
   font-size: 14px;
+  margin-bottom: 10px;
 }
-/* line 231, scss/style.scss */
+/* line 244, scss/style.scss */
 .square#newsletter .info-inner .info-content p {
   margin: 0;
 }
-/* line 236, scss/style.scss */
+/* line 249, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit {
   margin-top: 0;
   height: 30px;
 }
-/* line 240, scss/style.scss */
+/* line 253, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit input {
   border: none;
   background: white;
@@ -263,164 +294,57 @@ body {
   font-weight: 700;
   font-size: 14px;
   height: 30px;
+  width: 100%;
+  line-height: 30px;
 }
-/* line 255, scss/style.scss */
-.square.countdown, .square.werkschau-square, .square#newsletter {
-  width: 200px;
-  height: 200px;
+/* line 269, scss/style.scss */
+.square.countdown {
+  width: 150px;
+  height: 150px;
+}
+/* line 275, scss/style.scss */
+.square.countdown, .square.werkschau-square {
   color: #fff;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 269, scss/style.scss */
-.square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number, .square#newsletter.seconds .info-inner .info-content .countdown-number {
-  font-size: 42px;
+/* line 288, scss/style.scss */
+.square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number {
+  font-size: 23px;
 }
-/* line 276, scss/style.scss */
-.square.countdown .info-inner, .square.werkschau-square .info-inner, .square#newsletter .info-inner {
+/* line 295, scss/style.scss */
+.square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
   width: 100%;
   text-align: center;
   vertical-align: middle;
 }
-/* line 283, scss/style.scss */
-.square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content, .square#newsletter .info-inner .info-content {
+/* line 302, scss/style.scss */
+.square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 287, scss/style.scss */
-.square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number, .square#newsletter .info-inner .info-content .countdown-number {
-  font-size: 50px;
-  line-height: 60px;
+/* line 306, scss/style.scss */
+.square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
+  font-size: 32px;
+  line-height: 50px;
   font-weight: 700;
 }
-/* line 293, scss/style.scss */
-.square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title, .square#newsletter .info-inner .info-content .werkschau-title {
+/* line 312, scss/style.scss */
+.square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
 }
 
-/* line 303, scss/style.scss */
-.werkschau-square {
-  width: 100px;
-  height: 100px;
+/* line 323, scss/style.scss */
+.werkschau-square,
+#newsletter {
+  width: 200px;
+  height: 200px;
 }
 
 /*/ SQUARE LOGIC /*/
-/* NEWSLETTER */
-/* line 313, scss/style.scss */
-#cn-newsletter-btn {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  bottom: 20px;
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-  line-height: 30px;
-  z-index: 10;
-}
-/* line 325, scss/style.scss */
-#cn-newsletter-btn #show-newsletter-btn {
-  color: #000;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-/* line 333, scss/style.scss */
-#cn-ol-newsletter {
-  width: 100%;
-  height: 100%;
-  display: table;
-  text-align: center;
-  z-index: 10;
-}
-/* line 340, scss/style.scss */
-#cn-ol-newsletter.stuckAway {
-  margin-top: -6000px;
-}
-/* line 345, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 349, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter {
-  position: relative;
-  width: 400px;
-  height: auto;
-  border: 1px solid #efefef;
-  margin: auto;
-  padding: 45px 30px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.1);
-}
-/* line 359, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-title {
-  font-weight: 700;
-  font-size: 12px;
-  width: 100%;
-  height: 60px;
-  line-height: 30px;
-}
-/* line 367, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #newsletter-text {
-  width: 400px;
-  margin: auto;
-  text-align: left;
-  font-size: 13px;
-  line-height: 1.6em;
-  margin: 35px 0;
-}
-/* line 376, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter #close-newsletter-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 20px;
-  width: 20px;
-}
-/* line 388, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p {
-  height: 35px;
-  width: 100%;
-}
-/* line 392, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input,
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  font-size: 14px;
-  text-align: center;
-}
-/* line 402, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="text"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="text"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="text"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="text"] {
-  border: 1px solid #efefef;
-}
-/* line 406, scss/style.scss */
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRow input[type="submit"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivRowField input[type="submit"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form .yks-mailchimpFormDivSubmit input[type="submit"],
-#cn-ol-newsletter #in-ol-newsletter #in-cn-newsletter form p input[type="submit"] {
-  background: orange;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 12px;
-}
-
-/*/ NEWSLETTER /*/
