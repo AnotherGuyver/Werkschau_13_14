@@ -4,7 +4,7 @@
 		<div class="not-clickable werkschau-square square expand">
 			<div class="info-inner">
 				<div class="info-content">
-					<div class="werkschau-title">WERKSCHAU<br />13/14</div>
+					<div class="werkschau-title">WERKSCHAU<br />13/14</div><br />
 					<div class="werkschau-date">7.2 bis 9.2</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
-					<div class="bottom-message">KAFFEES<br />TRINKEN</div>
+					<div class="bottom-message">MAL <br />FRÜHSTÜCKEN</div>
 				</div>
 			</div>
 		</div>

@@ -108,45 +108,45 @@ body {
 }
 
 /*/ CLASSES /*/
-/* SQUAwRE LOGIC */
+/* SQUARE LOGIC */
 /* line 76, scss/style.scss */
 .square {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
   cursor: pointer;
   overflow: hidden;
 }
-/* line 82, scss/style.scss */
+/* line 85, scss/style.scss */
 .square.not-clickable {
   cursor: default;
 }
-/* line 86, scss/style.scss */
+/* line 89, scss/style.scss */
 .square.Print {
   background-image: url(img/squares/yellow_big.jpg);
 }
-/* line 91, scss/style.scss */
+/* line 94, scss/style.scss */
 .square.Web {
   background-image: url(img/squares/violett_big.jpg);
 }
-/* line 96, scss/style.scss */
+/* line 99, scss/style.scss */
 .square.Film {
   background-image: url(img/squares/blue_big.jpg);
 }
-/* line 101, scss/style.scss */
+/* line 104, scss/style.scss */
 .square.Foto {
   background-image: url(img/squares/red_big.jpg);
 }
-/* line 106, scss/style.scss */
+/* line 109, scss/style.scss */
 .square.Installation {
   background-image: url(img/squares/mint_big.jpg);
 }
-/* line 115, scss/style.scss */
+/* line 118, scss/style.scss */
 .square.small .attachment-square-thumb,
 .square.small .message,
 .square.small .category, .square.big .attachment-square-thumb,
@@ -154,7 +154,7 @@ body {
 .square.big .category {
   display: none;
 }
-/* line 121, scss/style.scss */
+/* line 124, scss/style.scss */
 .square .message,
 .square .category {
   position: absolute;
@@ -169,102 +169,103 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 135, scss/style.scss */
+/* line 138, scss/style.scss */
 .square .message {
   position: absolute;
   bottom: 0;
   height: auto;
 }
-/* line 141, scss/style.scss */
+/* line 144, scss/style.scss */
 .square .category {
   position: absolute;
   top: 0;
   height: 20px;
   text-transform: uppercase;
 }
-/* line 148, scss/style.scss */
+/* line 151, scss/style.scss */
 .square .attachment-square-thumb {
   position: absolute;
   height: 100%;
   width: auto;
 }
-/* line 155, scss/style.scss */
+/* line 158, scss/style.scss */
 .square.small {
   width: 50px;
   height: 50px;
 }
-/* line 160, scss/style.scss */
+/* line 164, scss/style.scss */
 .square.big {
   width: 100px;
   height: 100px;
 }
-/* line 165, scss/style.scss */
+/* line 170, scss/style.scss */
 .square.expand {
   width: 200px;
   height: 200px;
   z-index: 20;
 }
-/* line 173, scss/style.scss */
+/* line 178, scss/style.scss */
 .square.expand .message,
 .square.expand .category,
 .square.expand .attachment-square-thumb {
   display: block;
 }
-/* line 178, scss/style.scss */
+/* line 183, scss/style.scss */
 .square.seconds {
-  background: #ffb226;
+  background: url(img/squares/orange_big.jpg);
 }
-/* line 182, scss/style.scss */
+/* line 187, scss/style.scss */
 .square.minutes {
-  background: #b24925;
+  background: url(img/squares/red_big.jpg);
 }
-/* line 186, scss/style.scss */
+/* line 191, scss/style.scss */
 .square.hours {
-  background: #d07327;
+  background: url(img/squares/blue_big.jpg);
 }
-/* line 190, scss/style.scss */
+/* line 195, scss/style.scss */
 .square.days {
-  background: #b8c8e9;
+  background: url(img/squares/mint_big.jpg);
 }
-/* line 194, scss/style.scss */
+/* line 199, scss/style.scss */
 .square.weeks {
-  background: #bacd4d;
+  background: url(img/squares/yellow_big.jpg);
 }
-/* line 198, scss/style.scss */
+/* line 203, scss/style.scss */
 .square.werkschau-square {
-  background: #7c3548;
+  background: url(img/squares/violett_big.jpg);
 }
-/* line 202, scss/style.scss */
+/* line 207, scss/style.scss */
 .square#newsletter {
   background: url(img/squares/blue_big.jpg);
 }
-/* line 205, scss/style.scss */
+/* line 210, scss/style.scss */
 .square#newsletter .top-message {
   font-size: 18px;
   line-height: 25px;
   color: white;
 }
-/* line 211, scss/style.scss */
+/* line 216, scss/style.scss */
 .square#newsletter .mail-field {
   position: absolute;
   bottom: 20px;
   width: 160px;
 }
-/* line 218, scss/style.scss */
+/* line 223, scss/style.scss */
 .square#newsletter .info-inner .info-content {
-  text-align: left;
   padding: 20px;
+  margin-top: 15px;
+  text-align: center;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 224, scss/style.scss */
+/* line 230, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
-/* line 230, scss/style.scss */
+/* line 236, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField .yks-require {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -277,32 +278,35 @@ body {
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* line 244, scss/style.scss */
+/* line 250, scss/style.scss */
 .square#newsletter .info-inner .info-content p {
   margin: 0;
 }
-/* line 249, scss/style.scss */
+/* line 255, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit {
   margin-top: 0;
   height: 30px;
 }
-/* line 253, scss/style.scss */
+/* line 259, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit input {
   border: none;
   background: white;
   color: #C2D0EB;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   height: 30px;
   width: 100%;
   line-height: 30px;
 }
-/* line 269, scss/style.scss */
+/* line 275, scss/style.scss */
 .square.countdown {
   width: 150px;
   height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
 }
-/* line 275, scss/style.scss */
+/* line 284, scss/style.scss */
 .square.countdown, .square.werkschau-square {
   color: #fff;
   font-size: 18px;
@@ -312,11 +316,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 288, scss/style.scss */
+/* line 297, scss/style.scss */
 .square.countdown.seconds .info-inner .info-content .countdown-number, .square.werkschau-square.seconds .info-inner .info-content .countdown-number {
   font-size: 23px;
 }
-/* line 295, scss/style.scss */
+/* line 304, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -324,23 +328,23 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 302, scss/style.scss */
+/* line 311, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 306, scss/style.scss */
+/* line 315, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
   font-size: 32px;
   line-height: 50px;
   font-weight: 700;
 }
-/* line 312, scss/style.scss */
+/* line 321, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
 }
 
-/* line 323, scss/style.scss */
+/* line 332, scss/style.scss */
 .werkschau-square,
 #newsletter {
   width: 200px;

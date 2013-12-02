@@ -42,11 +42,6 @@ $mint-image: url(img/squares/mint_big.jpg);
 $blue-image: url(img/squares/blue_big.jpg);
 
 /* MIXINS */
-@mixin square(){ 
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
 
 @mixin bz(){
 	-webkit-box-sizing: border-box;
