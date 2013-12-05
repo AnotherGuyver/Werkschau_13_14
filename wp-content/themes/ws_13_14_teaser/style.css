@@ -232,11 +232,11 @@ body {
 }
 /* line 203, scss/style.scss */
 .square.werkschau-square {
-  background: url(img/squares/violett_big.jpg);
+  background: url(img/squares/black_big.jpg);
 }
 /* line 207, scss/style.scss */
 .square#newsletter {
-  background: url(img/squares/blue_big.jpg);
+  background: url(img/squares/black_big.jpg);
 }
 /* line 210, scss/style.scss */
 .square#newsletter .top-message {
@@ -262,7 +262,7 @@ body {
 .square#newsletter .info-inner .info-content .yks-success,
 .square#newsletter .info-inner .info-content .yks-error {
   padding: 10px;
-  background: #AEC0E6;
+  background: #000;
   border: 1px solid #fff;
   color: #fff;
   font-size: 11px;
@@ -314,27 +314,31 @@ body {
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-ms-input-placeholder {
   color: white;
 }
-/* line 287, scss/style.scss */
+/* line 286, scss/style.scss */
+.square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-o-input-placeholder {
+  color: white;
+}
+/* line 291, scss/style.scss */
 .square#newsletter .info-inner .info-content p {
   margin: 0;
 }
-/* line 292, scss/style.scss */
+/* line 296, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit {
   margin-top: 0;
   height: 30px;
 }
-/* line 296, scss/style.scss */
+/* line 300, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit input {
   border: none;
   background: white;
-  color: #C2D0EB;
+  color: #000;
   font-weight: 400;
   font-size: 14px;
   height: 30px;
   width: 100%;
   line-height: 30px;
 }
-/* line 312, scss/style.scss */
+/* line 316, scss/style.scss */
 .square.countdown {
   width: 150px;
   height: 150px;
@@ -342,7 +346,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
 }
-/* line 321, scss/style.scss */
+/* line 325, scss/style.scss */
 .square.countdown, .square.werkschau-square {
   color: #fff;
   font-size: 18px;
@@ -352,7 +356,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 332, scss/style.scss */
+/* line 336, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -360,25 +364,25 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 339, scss/style.scss */
+/* line 343, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 343, scss/style.scss */
+/* line 347, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
   font-size: 30px;
   line-height: 50px;
   font-weight: 700;
 }
-/* line 349, scss/style.scss */
+/* line 353, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
 }
 
-/* line 362, scss/style.scss */
+/* line 366, scss/style.scss */
 .werkschau-square,
 #newsletter {
   width: 200px;
