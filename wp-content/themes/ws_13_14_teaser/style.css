@@ -146,7 +146,11 @@ body {
 .square.Installation {
   background-image: url(img/squares/mint_big.jpg);
 }
-/* line 118, scss/style.scss */
+/* line 114, scss/style.scss */
+.square.Allgemein {
+  background: url(img/squares/orange_big.jpg);
+}
+/* line 123, scss/style.scss */
 .square.small .attachment-square-thumb,
 .square.small .message,
 .square.small .category, .square.big .attachment-square-thumb,
@@ -154,7 +158,7 @@ body {
 .square.big .category {
   display: none;
 }
-/* line 124, scss/style.scss */
+/* line 129, scss/style.scss */
 .square .message,
 .square .category {
   position: absolute;
@@ -169,88 +173,88 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 138, scss/style.scss */
+/* line 143, scss/style.scss */
 .square .message {
   position: absolute;
   bottom: 0;
   height: auto;
 }
-/* line 144, scss/style.scss */
+/* line 149, scss/style.scss */
 .square .category {
   position: absolute;
   top: 0;
   height: 20px;
   text-transform: uppercase;
 }
-/* line 151, scss/style.scss */
+/* line 156, scss/style.scss */
 .square .attachment-square-thumb {
   position: absolute;
   height: 100%;
   width: auto;
 }
-/* line 158, scss/style.scss */
+/* line 163, scss/style.scss */
 .square.small {
   width: 50px;
   height: 50px;
 }
-/* line 164, scss/style.scss */
+/* line 169, scss/style.scss */
 .square.big {
   width: 100px;
   height: 100px;
 }
-/* line 170, scss/style.scss */
+/* line 175, scss/style.scss */
 .square.expand {
   width: 200px;
   height: 200px;
   z-index: 20;
 }
-/* line 178, scss/style.scss */
+/* line 183, scss/style.scss */
 .square.expand .message,
 .square.expand .category,
 .square.expand .attachment-square-thumb {
   display: block;
 }
-/* line 183, scss/style.scss */
+/* line 188, scss/style.scss */
 .square.seconds {
   background: url(img/squares/orange_big.jpg);
 }
-/* line 187, scss/style.scss */
+/* line 192, scss/style.scss */
 .square.minutes {
   background: url(img/squares/red_big.jpg);
 }
-/* line 191, scss/style.scss */
+/* line 196, scss/style.scss */
 .square.hours {
   background: url(img/squares/blue_big.jpg);
 }
-/* line 195, scss/style.scss */
+/* line 200, scss/style.scss */
 .square.days {
   background: url(img/squares/mint_big.jpg);
 }
-/* line 199, scss/style.scss */
+/* line 204, scss/style.scss */
 .square.weeks {
   background: url(img/squares/yellow_big.jpg);
 }
-/* line 203, scss/style.scss */
+/* line 208, scss/style.scss */
 .square.werkschau-square {
   background: url(img/squares/black_big.jpg);
 }
-/* line 207, scss/style.scss */
+/* line 212, scss/style.scss */
 .square#newsletter {
   background: url(img/squares/black_big.jpg);
 }
-/* line 210, scss/style.scss */
+/* line 215, scss/style.scss */
 .square#newsletter .top-message {
   font-size: 18px;
   line-height: 25px;
   color: white;
 }
-/* line 216, scss/style.scss */
+/* line 221, scss/style.scss */
 .square#newsletter .mail-field {
   position: absolute;
   bottom: 20px;
   width: 160px;
 }
-/* line 223, scss/style.scss */
+/* line 228, scss/style.scss */
 .square#newsletter .info-inner .info-content {
   padding: 20px;
   margin-top: 15px;
@@ -258,7 +262,7 @@ body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 231, scss/style.scss */
+/* line 236, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-success,
 .square#newsletter .info-inner .info-content .yks-error {
   padding: 10px;
@@ -271,18 +275,18 @@ body {
   box-sizing: border-box;
   width: 160px;
 }
-/* line 243, scss/style.scss */
+/* line 248, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-error {
   background: #B14924;
 }
-/* line 247, scss/style.scss */
+/* line 252, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
 }
-/* line 253, scss/style.scss */
+/* line 258, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField .yks-require {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -291,45 +295,47 @@ body {
   height: 30px;
   background: none;
   border: 1px solid white;
+  border-radius: 0;
   color: white;
   padding: 5px 6px 1px;
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* line 270, scss/style.scss */
+/* line 276, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField ::-webkit-input-placeholder {
   color: white;
 }
-/* line 274, scss/style.scss */
+/* line 280, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-moz-placeholder {
   /* Firefox 18- */
   color: white;
 }
-/* line 278, scss/style.scss */
+/* line 284, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField ::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
-/* line 282, scss/style.scss */
+/* line 288, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-ms-input-placeholder {
   color: white;
 }
-/* line 286, scss/style.scss */
+/* line 292, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivRowField :-o-input-placeholder {
   color: white;
 }
-/* line 291, scss/style.scss */
+/* line 297, scss/style.scss */
 .square#newsletter .info-inner .info-content p {
   margin: 0;
 }
-/* line 296, scss/style.scss */
+/* line 302, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit {
   margin-top: 0;
   height: 30px;
 }
-/* line 300, scss/style.scss */
+/* line 306, scss/style.scss */
 .square#newsletter .info-inner .info-content .yks-mailchimpFormDivSubmit input {
   border: none;
+  border-radius: 0;
   background: white;
   color: #000;
   font-weight: 400;
@@ -338,7 +344,7 @@ body {
   width: 100%;
   line-height: 30px;
 }
-/* line 316, scss/style.scss */
+/* line 323, scss/style.scss */
 .square.countdown {
   width: 150px;
   height: 150px;
@@ -346,7 +352,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
 }
-/* line 325, scss/style.scss */
+/* line 332, scss/style.scss */
 .square.countdown, .square.werkschau-square {
   color: #fff;
   font-size: 18px;
@@ -356,7 +362,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 336, scss/style.scss */
+/* line 343, scss/style.scss */
 .square.countdown .info-inner, .square.werkschau-square .info-inner {
   display: table;
   height: 100%;
@@ -364,25 +370,25 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-/* line 343, scss/style.scss */
+/* line 350, scss/style.scss */
 .square.countdown .info-inner .info-content, .square.werkschau-square .info-inner .info-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 347, scss/style.scss */
+/* line 354, scss/style.scss */
 .square.countdown .info-inner .info-content .countdown-number, .square.werkschau-square .info-inner .info-content .countdown-number {
   font-size: 30px;
   line-height: 50px;
   font-weight: 700;
 }
-/* line 353, scss/style.scss */
+/* line 360, scss/style.scss */
 .square.countdown .info-inner .info-content .werkschau-title, .square.werkschau-square .info-inner .info-content .werkschau-title {
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
 }
 
-/* line 366, scss/style.scss */
+/* line 373, scss/style.scss */
 .werkschau-square,
 #newsletter {
   width: 200px;
