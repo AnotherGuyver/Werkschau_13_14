@@ -148,7 +148,7 @@ body {
 }
 /* line 114, scss/style.scss */
 .square.Allgemein {
-  background: url(img/squares/orange_big.jpg);
+  background-image: url(img/squares/orange_big.jpg);
 }
 /* line 123, scss/style.scss */
 .square.small .attachment-square-thumb,
