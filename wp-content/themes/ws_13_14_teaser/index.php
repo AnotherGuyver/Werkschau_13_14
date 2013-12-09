@@ -23,7 +23,7 @@
 				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
-					<div class="bottom-message">KAFFEE<br />TRINKEN</div>
+					<div class="bottom-message">MAL AUF'S<br />HANDY GUCKEN</div>
 				</div>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 				<div class="info-content">
 					<div class="top-message">NOCH</div>
 					<div class="countdown-number"></div>
-					<div class="bottom-message">FILME<br />SCHAUEN</div>
+					<div class="bottom-message">TAGTRÄUME</div>
 				</div>
 			</div>
 		</div>
