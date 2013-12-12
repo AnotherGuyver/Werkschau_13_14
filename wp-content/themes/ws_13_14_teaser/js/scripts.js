@@ -41,7 +41,7 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 
 			$(this).on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(){
 				$("#squares").isotope('reLayout');
-				console.log("re");
+				// console.log("re");
 			})
 		});
 
@@ -74,7 +74,7 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 		var days		= Math.floor( rest / ( 1000*60*60*24 ) );
 		var weeks 		= Math.floor( rest / ( 1000*60*60*24*7 ) );
 
-		console.log("Sekunden:"+seconds+" Minuten:"+minutes+" Stunden:"+hours+" Tage:"+days+" Wochen:"+weeks);
+		// console.log("Sekunden:"+seconds+" Minuten:"+minutes+" Stunden:"+hours+" Tage:"+days+" Wochen:"+weeks);
 
 		updateDate(".seconds", seconds);
 		updateDate(".minutes", minutes);
@@ -86,7 +86,7 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 	function updateDate(selector, newDate){
 		if( $(".countdown-number", selector).text() != newDate ){
 			$(".countdown-number", selector).text(newDate);
-			console.log("updated");
+			// console.log("updated");
 		}
 	}
 
