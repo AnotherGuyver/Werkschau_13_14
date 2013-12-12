@@ -356,7 +356,7 @@ body {
 /* line 333, scss/style.scss */
 .square.countdown, .square.werkschau-square {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   letter-spacing: 0px;
   -webkit-box-sizing: border-box;
