@@ -2,9 +2,14 @@ jQuery.noConflict();
 
 var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 
+
 (function( $ ) {
 	$(document).ready(function(){
-		$(".square").not('.not-clickable').each(function(i,e){
+
+		var video_container = $('#video-container');
+		var video_content = $('#video-container .video-content')
+
+		$(".square").not('.not-clickable').not('.video').each(function(i,e){
 			var square = e;
 /*
 			var ww = $(window).width();
@@ -20,9 +25,9 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 			//$(this).css({ 'top' : Math.floor((Math.random()*10)+1)*100, 'left' : Math.floor((Math.random()*15)+1)*100 })
 */
 
-
 			var isBig = $(this).hasClass("big");
 			var offX, offY;
+			
 
 			/*var toggle = function(){
 				$(this).toggleClass("expand");
@@ -44,6 +49,15 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 				// console.log("re");
 			})
 		});
+
+		$('.video').bind('click', function(){
+			video_content.html('<iframe src="//player.vimeo.com/video/' + $('.play-button', this).attr('video-link') + '?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>')
+			video_container.fadeIn();
+		})		
+
+		$('#close-video').bind('click',function(){
+			$('#video-container').slideUp();
+		})
 
 		init();
 

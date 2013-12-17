@@ -72,9 +72,22 @@
 		if( $my_query->have_posts() ) {
 			while ($my_query->have_posts()) : $my_query->the_post(); ?>
 		  	<!-- TEMPLATE FOR TRIANGLE GOES HERE -->
-				<div class="square  <?php echo custom_taxonomies_terms_links();?> <?php echo types_render_field("groesse",array('raw'=>true)); ?>">
-					<?php the_post_thumbnail('square-thumb'); ?>
+		  	<?php 
+		  		$video = types_render_field('video-vimeo',array( 'raw'=>'true' ));
+		  		if($video){
+		  			$video_class = 'video';
+		  		} else {
+		  			$video_class = '';
+		  		}
+		  	?>
+				<div class="square  <?php echo custom_taxonomies_terms_links();?> <?php echo types_render_field("groesse",array('raw'=>true)) . ' ' . $video_class; ?>">
+					<?php if ($video){ ?>
+						<div class="play-button" video-link="<?php echo $video ?>"><img src="<?php echo $template_dir ?>/img/icons/play.svg"></div>
+					
+					<?php } else { ?>
 
+					<?php the_post_thumbnail('square-thumb'); ?>
+					
 					<div class="category">
 						<div class="circle-wrapper">
 							<div class="circle <?php echo custom_taxonomies_terms_links(); ?>">
@@ -85,6 +98,7 @@
 					<div class="message <?php echo custom_taxonomies_terms_links(); ?>">
 						<?php echo strip_tags(get_the_title()); ?>
 					</div>
+					<?php } ?>
 				</div>
 		  	<!-- TEMPLATE FOR TRIANGLE ENDS HERE -->
 		  					

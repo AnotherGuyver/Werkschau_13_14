@@ -1,4 +1,12 @@
 </div>
+<div id="video-container">
+	<div class="close-video">
+		<a id="close-video" href="javascript:"><img src="<?php echo get_template_directory_uri(); ?>/img/icons/close_video.svg" alt="Video schließen"></a>
+	</div>
+	<div class="video-content">
+		
+	</div>
+</div>
 
 <script>
 
