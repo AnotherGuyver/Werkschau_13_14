@@ -8,3 +8,60 @@ Version: 0.01
 Tags: werkschau, teaser
 */
 
+@import 'settings';
+@import 'foundation';
+@import 'variables';
+@import 'base';
+@import '1025up';
+@import '1024down';
+
+#navi-outer {
+	position: fixed;
+	height: 80px;
+	background: $standard_dark;
+	z-index: 10;
+
+	#navi-main {
+		li {
+			font-size: $nav-font-size;
+			line-height: $nav-height;
+			text-align: center;
+		}
+	}
+}
+
+// SECTIONS
+
+#anfahrt-section {
+	#anfahrt-info-outer {
+		position: absolute;
+		height: 100%;
+		width: 20%;
+		z-index: 4;
+		padding: 100px 20px 20px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		#anfahrt-info-inner {
+			height: 100%;
+			width: 100%;
+			background: black;
+			display: table;
+
+			#anfahrt-info-content {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	#map {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#footer {
+	background: $standard-dark;
+}

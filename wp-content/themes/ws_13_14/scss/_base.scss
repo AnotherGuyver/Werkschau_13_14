@@ -1,0 +1,75 @@
+//FIXES
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body,
+#wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+#section-list {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none none inside;
+}
+
+// CLASSES
+
+.fullwidth {
+	width: 100%;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.fullscreen {
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	min-height: 100%;
+	position: relative;
+}
+
+.first {
+	padding-top: $nav-height;
+}
+
+.whitelink {
+	color: white;
+
+	&:hover {
+		color: $hover_blue;
+	}
+}
+
+//GENERAL
+
+body {
+	background: $bg;
+	font-family: $trade-cn;
+}
+
+a {
+	color: $standard_dark;
+
+	&:hover {
+		color: $hover_blue;
+	}
+}
+

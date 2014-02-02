@@ -1,0 +1,28 @@
+// COLORS
+
+$standard_dark: 	#303030;
+$standard_light: 	#444;
+$hover_orange: 	#ff7300;
+$hover_blue: 		#7cceeb;
+$bg: 					#ebebe8;
+
+// NAVIGATION
+
+$nav-height: 80px;
+$nav-font-size: 20px;
+
+
+// FONTS
+
+@font-face {
+	font-family: 'Trade Gothic Condensed';
+	src: url('fonts/TradeGothicLTStd-Cn18.otf');
+}
+
+@font-face {
+	font-family: 'Trande Gothic Light';
+	src: url('fonts/TradeGothicLTStd-Light.otf');
+}
+
+$trade: 'Trade Gothic Light', 'Helvetica', Arial, sans-serif;
+$trade-cn: 'Trade Gothic Condensed', 'Helvetica', Arial, sans-serif;
