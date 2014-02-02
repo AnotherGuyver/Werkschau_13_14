@@ -25,8 +25,8 @@
 		<li id="anfahrt-section" class="section fullscreen">
 			<div id="anfahrt-info-outer">
 				<div id="anfahrt-info-inner">
-					<div id="anfahrt-info-box">
-						
+					<div id="anfahrt-info-content">
+						ss
 					</div>
 				</div>
 			</div>

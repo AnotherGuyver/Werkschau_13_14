@@ -6903,16 +6903,17 @@ a:hover {
 }
 /* line 52, scss/style.scss */
 #anfahrt-section #anfahrt-info-outer #anfahrt-info-inner #anfahrt-info-content {
+  color: white;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 59, scss/style.scss */
+/* line 60, scss/style.scss */
 #anfahrt-section #map {
   width: 100%;
   height: 100%;
 }
 
-/* line 65, scss/style.scss */
+/* line 66, scss/style.scss */
 #footer {
   background: #303030;
 }
