@@ -35,3 +35,21 @@
 2014-02-02 18:06:51 overwrite ./style.css 
 2014-02-02 18:07:15 overwrite ./style.css 
 2014-02-02 18:10:39 overwrite ./style.css 
+2014-02-02 18:20:41 overwrite ./style.css 
+2014-02-02 18:24:40 overwrite ./style.css 
+2014-02-02 18:24:50 overwrite ./style.css 
+2014-02-02 18:40:07 overwrite ./style.css 
+2014-02-02 19:33:04     error scss/style.scss (Line 53: Invalid CSS after "				font-size: ": expected expression (e.g. 1px, bold), was ";")
+2014-02-02 19:33:04 overwrite ./style.css 
+2014-02-02 19:33:15     error scss/style.scss (Line 53: Invalid CSS after "				font-size: ": expected expression (e.g. 1px, bold), was ";")
+2014-02-02 19:33:15 identical ./style.css 
+2014-02-02 19:33:21 overwrite ./style.css 
+2014-02-02 19:33:46 overwrite ./style.css 
+2014-02-02 19:34:06 overwrite ./style.css 
+2014-02-02 19:34:36 overwrite ./style.css 
+2014-02-02 19:34:47 overwrite ./style.css 
+2014-02-02 19:35:00     error scss/style.scss (Line 66 of scss/_base.scss: Undefined variable: "$standard-size".)
+2014-02-02 19:35:00 overwrite ./style.css 
+2014-02-02 19:35:30     error scss/style.scss (Line 66 of scss/_base.scss: Undefined variable: "$standard-font-size".)
+2014-02-02 19:35:30 overwrite ./style.css 
+2014-02-02 19:35:37 overwrite ./style.css 
