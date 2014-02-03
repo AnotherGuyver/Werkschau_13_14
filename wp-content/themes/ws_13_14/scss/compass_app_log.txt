@@ -8,27 +8,27 @@
 2014-01-31 23:44:01 identical ../style.css 
 2014-01-31 23:44:20 identical ../style.css 
 2014-01-31 23:47:38 identical ../style.css 
-2014-01-31 23:51:26     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:51:26     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:51:26 overwrite ../style.css 
-2014-01-31 23:51:33     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:51:33     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:51:33 identical ../style.css 
-2014-01-31 23:52:02     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:52:02     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:52:02 identical ../style.css 
-2014-01-31 23:52:20     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:52:20     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:52:20 identical ../style.css 
-2014-01-31 23:53:33     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:53:33     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:53:33 identical ../style.css 
-2014-01-31 23:57:10     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:57:10     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:57:10 identical ../style.css 
-2014-01-31 23:57:13     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:57:13     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:57:13 identical ../style.css 
-2014-01-31 23:57:30     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:57:30     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:57:30 identical ../style.css 
-2014-01-31 23:57:34     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:57:34     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:57:34 identical ../style.css 
-2014-01-31 23:58:24     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:58:24     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:58:24 identical ../style.css 
-2014-01-31 23:58:38     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover_blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
+2014-01-31 23:58:38     error style.scss (Line 6 of _variables.scss: Invalid CSS after "hover-blue:": expected pseudoclass or pseudoelement, was " 		#b8c8e9;")
 2014-01-31 23:58:38 identical ../style.css 
 2014-02-01 00:03:14 overwrite ../style.css 
 2014-02-01 00:03:25     error style.scss (Line 17: Undefined variable: "$trade-condensed".)

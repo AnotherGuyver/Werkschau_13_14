@@ -1,3 +1,21 @@
+// MIXINS
+
+@mixin trall($duration){
+	-webkit-transition: all $duration ease-in-out;
+	-moz-transition: all $duration ease-in-out;
+	-ms-transition: all $duration ease-in-out;
+	-o-transition: all $duration ease-in-out;
+	transition: all $duration ease-in-out;
+}
+
+@mixin trcu($duration){
+	-webkit-transition: all $duration cubic-bezier(.3,.17,.55,.35);
+	-moz-transition: all $duration cubic-bezier(.3,.17,.55,.35);
+	-ms-transition: all $duration cubic-bezier(.3,.17,.55,.35);
+	-o-transition: all $duration cubic-bezier(.3,.17,.55,.35);
+	transition: all $duration cubic-bezier(.3,.17,.55,.35);
+}
+
 //FIXES
 
 html,
@@ -11,12 +29,14 @@ body,
 #wrapper {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 #section-list {
 	min-height: 100%;
 	width: 100%;
-	position: relative;
+	overflow-x: hidden;
+	position: fixed;
 }
 
 ul,
@@ -42,9 +62,18 @@ li {
 }
 
 .section {
-	min-height: 100%;
-	position: relative;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+
+	@include trall(400ms);
 }
+
+.nav-placeholder {
+	height: 80px;
+}
+
 
 .first {
 	padding-top: $nav-height;
@@ -54,7 +83,7 @@ li {
 	color: white;
 
 	&:hover {
-		color: $hover_blue;
+		color: $hover-blue;
 	}
 }
 
@@ -70,7 +99,7 @@ a {
 	color: $standard_dark;
 
 	&:hover {
-		color: $hover_blue;
+		color: $hover-blue;
 	}
 }
 
