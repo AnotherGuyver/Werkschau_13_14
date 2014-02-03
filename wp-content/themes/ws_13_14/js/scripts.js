@@ -38,16 +38,21 @@ jQuery(document).ready(function(){
 	navigation.eventHandlers();
 
 	home = {
-		isotopeContainer: $('#isotope'),
+		isotopeContainer: $('#isotope-inner'),
 		eventHandlers: function(){
 			var that = this;
 			$(window).resize(function(){
 				that.calculatePadding();
 			});
+
+			$('.absolvent').bind('click', function(){
+
+				$('+ .absolvent-full', this).addClass('visible').fadeIn();
+			});
 		},
 		calculatePadding: function(){
 			var padding = ($(window).width()%200)/2;
-			this.isotopeContainer.css({'padding': Math.floor(padding)});
+			$('#padding').css({'padding': Math.floor(padding)});
 			console.log(padding);
 		},
 		init: function(){

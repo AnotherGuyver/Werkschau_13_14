@@ -9,8 +9,12 @@
 		
 		<li id="<?php echo strtolower(str_replace(' ', '-', get_the_title() ) );?>" class="werkschau-slide fullscreen">
 			<img class="werkschau-slide-image" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="">
-			<div class="werkschau-slide-info-outer">
-				asd
+			<div class="werkschau-slide-info-outer fullwidth">
+				<div class="werkschau-slide-info-inner row">
+					<div class="werkschau-slide-info-content large-offset-1 large-4 columns">
+						<?php the_content(); ?>
+					</div>
+				</div>
 			</div>
 		</li>
 			
