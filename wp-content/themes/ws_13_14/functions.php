@@ -17,6 +17,7 @@ function register_all_scripts(){
 	wp_register_script( 'packery', get_template_directory_uri() . '/js/lib/packery.pkgd.min.js', array(),true );
 	wp_register_script( 'isotope', get_template_directory_uri() . '/js/lib/jquery.isotope.min.js', array(),true );
 	wp_register_script( 'isotopePerfectMasonry', get_template_directory_uri() . '/js/lib/jquery.isotope.perfectmasonry.js', array(),true );
+	wp_register_script( 'selectBox', get_template_directory_uri() . '/js/lib/jquery.selectbox-0.2.min.js', array(),true );
 	wp_register_script( 'main-scripts', get_template_directory_uri() . '/js/scripts.js', array(), true );
 
 	wp_enqueue_script('jQuery');
@@ -25,6 +26,7 @@ function register_all_scripts(){
 	wp_enqueue_script('packery');
 	wp_enqueue_script('isotope');
 	wp_enqueue_script('isotopePerfectMasonry');
+	wp_enqueue_script('selectBox');
 	wp_enqueue_script('main-scripts');
 }
 

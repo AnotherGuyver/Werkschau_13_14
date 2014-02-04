@@ -42,22 +42,46 @@ jQuery(document).ready(function(){
 		eventHandlers: function(){
 			var that = this;
 			$(window).resize(function(){
-				that.calculatePadding();
+				that.calculatePadding(); live()
 			});
 
 			$('.absolvent').bind('click', function(){
-
 				$('+ .absolvent-full', this).addClass('visible').fadeIn();
+			});
+
+			$('.absolvent-full').each(function(i,e){
+				var that = e;
+				$('.absolvent-close', e).bind('click', function(){
+					console.log(that);
+					if($(that).hasClass('visible')){
+
+						$(that).fadeOut('400',function(){ $(that).removeClass('visible'); });
+					}
+				});
 			});
 		},
 		calculatePadding: function(){
 			var padding = ($(window).width()%200)/2;
 			$('#padding').css({'padding': Math.floor(padding)});
+			$('#options-outer').css({'margin-left':padding});
 			console.log(padding);
+		},
+		createSelectBox: function(){
+			$('#sorting').selectbox({
+				onChange:function(val, inst){
+					$('#isotope-inner').isotope({ sortBy : val });
+				}
+			});
+			$('#filter').selectbox({
+				onChange:function(val, inst){
+					$('#isotope-inner').isotope({ filter : val });
+				}
+			});
 		},
 		init: function(){
 			this.eventHandlers();
 			this.calculatePadding();
+			this.createSelectBox();
 		}
 	}
 
