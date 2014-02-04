@@ -10,8 +10,8 @@ Tags: werkschau, teaser
 */
 /* line 264, scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
-  font-family: "only screen and (min-width: 768px)";
-  width: 768px;
+  font-family: "only screen and (min-width: 64em)";
+  width: 64em;
 }
 
 /* line 269, scss/foundation/components/_global.scss */
@@ -22,8 +22,8 @@ meta.foundation-mq-medium {
 
 /* line 274, scss/foundation/components/_global.scss */
 meta.foundation-mq-large {
-  font-family: "only screen and (min-width:64em)";
-  width: 64em;
+  font-family: "only screen and (min-width:1440px)";
+  width: 1440px;
 }
 
 /* line 292, scss/foundation/components/_global.scss */
@@ -357,7 +357,7 @@ select {
   }
 }
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 158, scss/foundation/components/_grid.scss */
   .large-1 {
     position: relative;
@@ -669,7 +669,7 @@ th.hide-for-xlarge {
 }
 
 /* Medium Displays: 768px - 1279px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 85, scss/foundation/components/_visibility.scss */
   .show-for-medium,
   .show-for-medium-up {
@@ -778,7 +778,7 @@ th.hide-for-xlarge {
   }
 }
 /* X-Large Displays: 1400px and up */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1440px) {
   /* line 173, scss/foundation/components/_visibility.scss */
   .show-for-xlarge {
     display: inherit !important;
@@ -1230,7 +1230,7 @@ th.hide-for-touch {
   }
 }
 /* Foundation Block Grids for above small breakpoint */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* Remove small grid clearing */
   /* line 63, scss/foundation/components/_block-grid.scss */
   .small-block-grid-1 > li:nth-of-type(1n+1) {
@@ -1768,7 +1768,7 @@ blockquote p {
   padding: 0 0.0625em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 368, scss/foundation/components/_type.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
@@ -2151,7 +2151,7 @@ button.large, .button.large {
     border-radius: 1000px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 223, scss/foundation/components/_buttons.scss */
   button, .button {
     display: inline-block;
@@ -3477,7 +3477,7 @@ label.error {
   border-bottom: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 319, scss/foundation/components/_section.scss */
   [data-section=''], [data-section='auto'], .section-container.auto {
     width: 100%;
@@ -4869,7 +4869,7 @@ label.error {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 318, scss/foundation/components/_orbit.scss */
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
@@ -4880,7 +4880,7 @@ label.error {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 64em) {
   /* line 328, scss/foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important;
@@ -4953,7 +4953,7 @@ label.error {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 121, scss/foundation/components/_reveal.scss */
   .reveal-modal {
     padding: 1.875em;
@@ -5157,7 +5157,7 @@ label.error {
 }
 
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 187, scss/foundation/components/_joyride.scss */
   .joyride-tip-guide {
     width: 300px;
@@ -5301,7 +5301,7 @@ label.error {
   display: block;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 123, scss/foundation/components/_clearing.scss */
   .clearing-main-prev,
   .clearing-main-next {
@@ -6617,7 +6617,7 @@ a.th {
   font-weight: normal;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64em) {
   /* line 86, scss/foundation/components/_tooltips.scss */
   .tooltip > .nub {
     border-color: transparent transparent black transparent;
@@ -6890,16 +6890,17 @@ a:hover {
   color: #7cceeb;
 }
 
-/* line 18, scss/style.scss */
+/* line 17, scss/style.scss */
 #navi-outer {
   position: fixed;
   height: 80px;
   background: #303030;
   z-index: 10;
 }
-/* line 25, scss/style.scss */
+/* line 24, scss/style.scss */
 #navi-outer #navi-main,
 #navi-outer #navi-side {
+  height: 80px;
   left: 0;
   right: 0;
   background: #303030;
@@ -7087,6 +7088,31 @@ a:hover {
   overflow: scroll;
 }
 /* line 207, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full .work-picture {
+  top: 0;
+  position: absolute;
+}
+/* line 213, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full .work-picture,
+#main-section #isotope #isotope-inner .absolvent-full .graduate-image {
+  display: none;
+}
+/* line 216, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full .work-picture.visible,
+#main-section #isotope #isotope-inner .absolvent-full .graduate-image.visible {
+  display: block;
+}
+/* line 222, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full .work-picture-mobile,
+#main-section #isotope #isotope-inner .absolvent-full .graduate-image-mobile {
+  display: none;
+}
+/* line 225, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full .work-picture-mobile.visible,
+#main-section #isotope #isotope-inner .absolvent-full .graduate-image-mobile.visible {
+  display: block;
+}
+/* line 230, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible {
   width: 100%;
   height: 100%;
@@ -7094,28 +7120,28 @@ a:hover {
   left: 0;
   z-index: 4;
 }
-/* line 215, scss/style.scss */
+/* line 238, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-close {
   position: absolute;
   top: 100px;
   right: 20px;
   width: 24px;
   height: 24px;
-  background: url("img/icons.png") 0 0;
+  background: url("img/icons.png") 0 -18px;
   z-index: 4;
   cursor: pointer;
 }
-/* line 226, scss/style.scss */
+/* line 249, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible img {
   width: 100%;
-  position: absolute;
 }
-/* line 231, scss/style.scss */
+/* line 253, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi {
   position: absolute;
   top: 120px;
+  z-index: 1;
 }
-/* line 235, scss/style.scss */
+/* line 258, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button {
   height: 30px;
   cursor: pointer;
@@ -7124,71 +7150,91 @@ a:hover {
   line-height: 35px;
   text-align: center;
 }
-/* line 243, scss/style.scss */
+/* line 266, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #switch-picture {
+  background: url("img/icons.png") 0 0;
+  width: 23px;
+  height: 13px;
+  position: absolute;
+  right: 23px;
+  top: 9px;
+}
+/* line 275, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #back-arrow {
-  background: url("img/icons.png");
-  background-position: 0 -41px;
+  position: absolute;
+  background: url("img/icons.png") 0 -111px;
+  top: 8px;
+  left: 12px;
   width: 7px;
   height: 14px;
 }
-/* line 251, scss/style.scss */
+/* line 284, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #next-arrow {
+  position: absolute;
+  background: url("img/icons.png") 0 -130px;
+  top: 8px;
+  right: 12px;
+  width: 7px;
+  height: 14px;
+}
+/* line 295, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer {
   position: absolute;
   top: 25%;
 }
-/* line 255, scss/style.scss */
+/* line 299, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-name {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-/* line 260, scss/style.scss */
+/* line 304, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-title {
   font-size: 1.3rem;
   line-height: 1.5rem;
   margin-bottom: 10px;
 }
-/* line 266, scss/style.scss */
+/* line 310, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-subtitle {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
-/* line 271, scss/style.scss */
+/* line 315, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-description {
   line-height: 1.4em;
-  max-height: 200px;
-  overflow: scroll;
+  max-height: 600px;
+  overflow: auto;
 }
 
-/* line 284, scss/style.scss */
+/* line 328, scss/style.scss */
 #werkschau-section {
   top: 0;
   left: 0;
   z-index: 5;
   background: #444444;
 }
-/* line 290, scss/style.scss */
+/* line 334, scss/style.scss */
 #werkschau-section.collapsed {
   position: absolute;
   left: 100%;
 }
-/* line 295, scss/style.scss */
+/* line 339, scss/style.scss */
 #werkschau-section #werkschau-slides {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 300, scss/style.scss */
+/* line 344, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 305, scss/style.scss */
+/* line 349, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-image {
   width: 100%;
   height: auto;
 }
-/* line 310, scss/style.scss */
+/* line 354, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer {
   background: #303030;
   position: absolute;
@@ -7196,14 +7242,131 @@ a:hover {
   color: white;
   z-index: 5;
 }
-/* line 318, scss/style.scss */
+/* line 362, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer .werkschau-slide-info-inner {
   padding: 20px;
 }
 
-/* line 327, scss/style.scss */
+/* line 371, scss/style.scss */
 #footer {
   position: absolute;
   top: 100%;
   background: #303030;
+}
+
+@media all and (min-width: 1025px) {
+  /* line 8, scss/_1025up.scss */
+  #main-section #isotope #isotope-inner .absolvent-full .work-picture-mobile,
+  #main-section #isotope #isotope-inner .absolvent-full .graduate-image-mobile {
+    display: none !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  /* line 3, scss/_1024down.scss */
+  #navi-outer {
+    position: absolute;
+    height: 44px;
+  }
+  /* line 8, scss/_1024down.scss */
+  #navi-outer #navi-main,
+  #navi-outer #naiv-side {
+    height: 44px;
+  }
+  /* line 13, scss/_1024down.scss */
+  #navi-outer #navi-main #link-show-mobile-menu,
+  #navi-outer #naiv-side #link-show-mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+  }
+  /* line 20, scss/_1024down.scss */
+  #navi-outer #navi-main #link-show-mobile-menu .link-content,
+  #navi-outer #naiv-side #link-show-mobile-menu .link-content {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: url("img/icons.png") 0 -170px;
+    width: 20px;
+    height: 12px;
+  }
+
+  /* line 34, scss/_1024down.scss */
+  #main-section #options-outer {
+    background: none;
+    top: 55px;
+  }
+  /* line 40, scss/_1024down.scss */
+  #main-section #options-outer #filter-inner .sbHolder,
+  #main-section #options-outer #sorting-inner .sbHolder {
+    height: 40px;
+    line-height: 40px;
+  }
+  /* line 44, scss/_1024down.scss */
+  #main-section #options-outer #filter-inner .sbHolder .sbToggle,
+  #main-section #options-outer #sorting-inner .sbHolder .sbToggle {
+    top: 5px;
+    right: 10px;
+  }
+  /* line 49, scss/_1024down.scss */
+  #main-section #options-outer #filter-inner .sbHolder li,
+  #main-section #options-outer #sorting-inner .sbHolder li {
+    line-height: 40px;
+    height: 40px;
+    background: #444444;
+  }
+  /* line 62, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full .work-picture,
+  #main-section #isotope #isotope-inner .absolvent-full .graduate-image {
+    display: none !important;
+  }
+  /* line 68, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-close {
+    top: 62px;
+  }
+  /* line 72, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer {
+    position: relative;
+    background: #303030;
+    color: white;
+    top: 0;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 82, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner {
+    margin-left: 0;
+  }
+  /* line 89, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .graduate-image-mobile {
+    margin-top: 44px;
+  }
+  /* line 95, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-back,
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-next {
+    position: fixed;
+    top: 30%;
+    width: 130px;
+    height: 44px;
+    line-height: 44px;
+  }
+  /* line 103, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-back #back-arrow,
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-back #next-arrow,
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-next #back-arrow,
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-next #next-arrow {
+    top: 13px;
+  }
+  /* line 108, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-next {
+    right: 0;
+  }
+  /* line 112, scss/_1024down.scss */
+  #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-back {
+    left: 0;
+    margin-left: 0;
+  }
 }

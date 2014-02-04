@@ -1,0 +1,15 @@
+@media all and (min-width: 1025px) {
+
+#main-section {
+	#isotope {
+		#isotope-inner {
+			.absolvent-full {
+				.work-picture-mobile,
+				.graduate-image-mobile {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+}

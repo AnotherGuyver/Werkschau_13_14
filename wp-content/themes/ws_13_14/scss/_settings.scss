@@ -76,9 +76,9 @@ $em-base: 16px !default;
 
 //// Media Queries
 
-// $small-screen: emCalc(768px);
-// $medium-screen: emCalc(1280px);
-$large-screen: emCalc(1024px);
+$small-screen: emCalc(1024px);
+//$medium-screen: emCalc(1025px);
+//$large-screen: emCalc(1025px);
 
 // $screen: "only screen";
 // $small: "only screen and (min-width:"#{$small-screen}")";

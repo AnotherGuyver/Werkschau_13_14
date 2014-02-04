@@ -1,0 +1,126 @@
+@media all and (max-width: 1024px) {
+
+#navi-outer {
+	position: absolute;
+	height: $mobile-nav-height;
+
+	#navi-main,
+	#naiv-side {
+
+		height: $mobile-nav-height;
+
+
+		#link-show-mobile-menu {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 44px;
+			height: 44px;
+
+			.link-content {
+				position: absolute;
+				top: 16px;
+				right: 16px;
+				background: $sprite 0 -170px;
+				width: 20px;
+				height: 12px;
+			}
+		}
+		
+	}
+}
+
+#main-section {
+	#options-outer {
+		background: none;
+		top: 55px;
+
+		#filter-inner,
+		#sorting-inner {
+			.sbHolder {
+				height: 40px;
+				line-height: 40px;
+
+				.sbToggle {
+					top: 5px;
+					right: 10px;
+				}
+
+				li {
+					line-height: 40px;
+					height: 40px;
+					background: $standard-light;
+				}
+			}
+		}
+	}
+
+	#isotope {
+		#isotope-inner {
+			.absolvent-full {
+				.work-picture,
+				.graduate-image {
+					display: none !important;
+				}
+
+
+				&.visible {
+					.absolvent-close {
+						top: 62px;
+					}
+
+					.absolvent-info-outer {
+						position: relative;
+						background: $standard-dark;
+						color: white;
+						top: 0;
+						padding: 20px;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+
+						.absolvent-info-inner {
+							margin-left: 0;
+						}
+
+
+					}
+
+					.graduate-image-mobile {
+						margin-top: 44px;
+					}
+
+					.absolvent-navi {
+						#absolvent-back,
+						#absolvent-next {
+							position: fixed;
+							top: 30%;
+							width: 130px;
+							height: 44px;
+							line-height: 44px;
+
+							#back-arrow,
+							#next-arrow {
+								top: 13px;
+							}
+						}
+
+						#absolvent-next {
+							right: 0;
+						}
+
+						#absolvent-back {
+							left: 0;
+							margin-left: 0;
+						}
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+
+}

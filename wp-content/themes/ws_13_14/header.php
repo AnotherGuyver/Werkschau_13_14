@@ -8,22 +8,25 @@
 <body>
 	<div id="navi-outer" class="fullwidth">
 		<div id="navi-inner">
-			<ul id="navi-main" class="row">
-				<li class="navi-element main-nav-link large-1 columns"><a id="link-absolventen" href="javascript:" class="navi-link whitelink">
+			<ul id="navi-main" class="row"><div id="link-show-mobile-menu" class="navi-link whitelink  hide-for-medium-up"><div class="link-content">&nbsp;</div></div>
+				<li class="navi-element main-nav-link large-1 small-9 columns"><a id="link-absolventen" href="javascript:" class="navi-link whitelink">
 						<div class="link-content">ABSOLVENTEN</div>
 					</a>
 				</li>
-				<li class="navi-element main-nav-link large-1 columns"><a id="link-anfahrt" href="javascript:" class="navi-link whitelink">
+				<li class="navi-element main-nav-link large-1 small-9 columns"><a id="link-anfahrt" href="javascript:" class="navi-link whitelink">
 						<div class="link-content">ANFAHRT</div>
 					</a>
 				</li>
-				<li class="navi-element main-nav-link large-1 columns"><a  id="link-werkschau" href="javascript:" class="navi-link whitelink">
+				<li class="navi-element main-nav-link large-1 small-9 columns"><a  id="link-werkschau" href="javascript:" class="navi-link whitelink">
 						<div class="link-content">WERKSCHAU</div>
 					</a>
 				</li>
-				<li class="navi-element large-6 columns">
+				<li class="navi-element large-6 columns hide-for-medium-down">
 					&nbsp;
 				</li>
+
+				
+				
 			</ul>
 			<ul id="navi-side" class="row hidden">
 				<li class="navi-element side-nav-link large-1 columns">

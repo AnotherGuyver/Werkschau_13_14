@@ -12,8 +12,7 @@ Tags: werkschau, teaser
 @import 'foundation';
 @import 'variables';
 @import 'base';
-@import '1025up';
-@import '1024down';
+
 
 #navi-outer {
 	position: fixed;
@@ -23,6 +22,7 @@ Tags: werkschau, teaser
 
 	#navi-main,
 	#navi-side {
+		height: $nav-height;
 		left: 0;
 		right: 0;
 		background: $standard_dark;
@@ -204,6 +204,29 @@ Tags: werkschau, teaser
 				position: fixed;
 				overflow: scroll;
 
+				.work-picture {
+					top: 0;
+					position: absolute;
+				}
+
+				.work-picture,
+				.graduate-image {
+					display: none;
+
+					&.visible {
+						display: block;
+					}
+				}
+
+				.work-picture-mobile,
+				.graduate-image-mobile {
+					display: none;
+
+					&.visible {
+						display: block;
+					}
+				}
+
 				&.visible {
 
 					width: 100%;
@@ -218,19 +241,19 @@ Tags: werkschau, teaser
 						right: 20px;
 						width: 24px;
 						height: 24px;
-						background: $sprite 0 0;
+						background: $sprite 0 -18px;
 						z-index: 4;
 						cursor: pointer;
 					}
 
 					img {
 						width: 100%;
-						position: absolute;
 					}
 
 					.absolvent-navi {
 						position: absolute;
 						top: 120px;
+						z-index: 1;
 
 						.absolvent-button {
 							height: 30px;
@@ -240,10 +263,31 @@ Tags: werkschau, teaser
 							line-height: 35px;
 							text-align: center;
 
+							#switch-picture {
+								background: $sprite 0 0;
+								width: 23px;
+								height: 13px;
+								position: absolute;
+								right: 23px;
+								top: 9px;
+							}
+
 							#back-arrow {
-								background: $sprite;
-								background-position: 0 -41px;
-								width: 7px; height: 14px; 
+								position: absolute;
+								background: $sprite 0 -111px;
+								top: 8px;
+								left: 12px;
+								width: 7px;
+								height: 14px;
+							}
+
+							#next-arrow {
+								position: absolute;
+								background: $sprite 0 -130px;
+								top: 8px;
+								right: 12px;
+								width: 7px;
+								height: 14px;
 							}
 						}
 					}
@@ -270,8 +314,8 @@ Tags: werkschau, teaser
 
 						.absolvent-work-description {
 							line-height: 1.4em;
-							max-height: 200px;
-							overflow: scroll;
+							max-height: 600px;
+							overflow: auto;
 						}
 					}
 				}
@@ -329,3 +373,6 @@ Tags: werkschau, teaser
 	top: 100%;
 	background: $standard-dark;
 }
+
+@import '1025up';
+@import '1024down';

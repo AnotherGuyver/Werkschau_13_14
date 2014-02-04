@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
 		eventHandlers: function(){
 			var that = this;
 			$(window).resize(function(){
-				that.calculatePadding(); live()
+				that.calculatePadding();
 			});
 
 			$('.absolvent').bind('click', function(){
@@ -52,12 +52,43 @@ jQuery(document).ready(function(){
 			$('.absolvent-full').each(function(i,e){
 				var that = e;
 				$('.absolvent-close', e).bind('click', function(){
-					console.log(that);
 					if($(that).hasClass('visible')){
-
-						$(that).fadeOut('400',function(){ $(that).removeClass('visible'); });
+						$(that).fadeOut('200',function(){ $(that).removeClass('visible'); });
 					}
 				});
+				$('#absolvent-next', that).bind('click',function(){
+					$(that).fadeOut('200',function(){
+						$(that).removeClass('visible');
+						next = parseInt($(that).attr('order'))+1;
+						selector = '.absolvent-full[order='+next+']';
+						if( $(selector).length ){
+							$(selector).addClass('visible').fadeIn('200');
+						} else {
+							$('.absolvent-full[order="1"]').addClass('visible').fadeIn('200');
+						}
+					})
+				});
+				$('#absolvent-back', that).bind('click',function(){
+					$(that).fadeOut('200',function(){
+						$(that).removeClass('visible');
+						next = parseInt($(that).attr('order'))-1;
+						selector = '.absolvent-full[order='+next+']';
+						if( $(selector).length ){
+							$(selector).addClass('visible').fadeIn('200');
+						} else {
+							$('.absolvent-full').last().addClass('visible').fadeIn('200');
+						}
+					})
+				});
+				$('#absolvent-change-image', that).bind('click',function(){
+					if( $('.work-picture', that).css('display') != 'none' ){
+						$('.work-picture', that).fadeOut('200');
+						$('.absolvent-info-outer').fadeIn('200')
+					} else {	
+						$('.work-picture', that).fadeIn('200');
+						$('.absolvent-info-outer').fadeOut('200');
+					}
+				})
 			});
 		},
 		calculatePadding: function(){

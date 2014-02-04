@@ -27,7 +27,7 @@
 
 
 			<?php
-				$absolventen = new WP_Query( array( 'post_type'=>'absolvent' ) );
+				$absolventen = new WP_Query( array( 'post_type'=>'absolvent','posts_per_page' => 100 ) );
 				while ( $absolventen->have_posts() ): $absolventen->the_post();
 				$i += 1;
 			?>
@@ -40,24 +40,27 @@
 					<img src="<?php echo types_render_field('graduate-preview', array('raw'=>true ) ); ?>" alt="<?php the_title(); ?>">
 				</div>
 
-				<div class="absolvent-full relation-<?php echo str_replace(' ','-',strtolower(get_the_title()) ); ?>">
+				<div class="absolvent-full relation-<?php echo str_replace(' ','-',strtolower(get_the_title()) ); ?>" order="<?php echo $i; ?>">
 					<div class="absolvent-close">&nbsp;</div>
-					<img src="<?php echo types_render_field('graduate-image', array('raw'=>true) ) ?>"  class="hide-for-medium-down" alt="<?php the_title(); ?>">
-					<img src="<?php echo types_render_field('graduate-image-mobile', array( 'raw'=>true )); ?>" alt="<?php the_title() ?>" class="hide-for-large-up">
+					<img src="<?php echo types_render_field('graduate-image', array('raw'=>true) ) ?>"  class="graduate-image visible" alt="<?php the_title(); ?>">
+					<img src="<?php echo types_render_field('graduate-image-mobile', array( 'raw'=>true )); ?>" alt="<?php the_title() ?>" class="graduate-image-mobile visible">
 					
 					<div class="absolvent-navi row">
-						<div id="absolvent-back" class="absolvent-button large-1 columns large-offset-1"><div id="back-arrow">&nbsp;</div>VORHERIGER</div>
-						<div class="absolvent-button large-1 columns"><?php echo mb_strtoupper(get_the_title(), 'UTF-8'); ?></div>
-						<div id="absolvent-next" class="absolvent-button large-1 columns pull-5">NÄCHSTER</div>
+						<div id="absolvent-back" class="absolvent-button large-1 columns large-offset-1 small-offset-0"><div id="back-arrow">&nbsp;</div>VORHERIGER</div>
+						<div id="absolvent-change-image" class="absolvent-button large-1 columns hide-for-medium-down">ARBEITSBILD <div id="switch-picture">&nbsp;</div> </div>
+						<div id="absolvent-next" class="absolvent-button large-1 columns pull-5">NÄCHSTER<div id="next-arrow">&nbsp;</div></div>
 					</div>
 					<div class="absolvent-info-outer row">
-						<div class="absolvent-info-inner large-3 large-offset-1 columns">
+						<div class="absolvent-info-inner large-4 large-offset-1 columns">
 							<div class="absolvent-name large-12 columns"><?php echo strtoupper(get_the_title()); ?></div>
 							<div class="absolvent-work-title large-12 columns"><?php echo types_render_field('work-title', array('raw'=>true) ) ?></div>
 							<div class="absolvent-work-subtitle large-12 columns"><?php echo mb_strtoupper(types_render_field('work-subtitle', array('raw'=>true) ), "UTF-8" ); ?></div>
 							<div class="absolvent-work-description large-12 columns"><?php echo types_render_field('work-description', array('raw'=>true) ) ?></div>
 						</div>
 					</div>
+
+					<img src="<?php echo types_render_field('work-picture', array('raw'=>true) ) ?>"  class="work-picture" alt="<?php the_title(); ?>">
+					<img src="<?php echo types_render_field('work-picture-mobile', array( 'raw'=>true )); ?>" alt="<?php the_title() ?>" class="work-picture-mobile visible">
 				</div>
 			
 
