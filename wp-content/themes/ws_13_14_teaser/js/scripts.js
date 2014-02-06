@@ -90,11 +90,19 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 
 		// console.log("Sekunden:"+seconds+" Minuten:"+minutes+" Stunden:"+hours+" Tage:"+days+" Wochen:"+weeks);
 
-		updateDate(".seconds", seconds);
-		updateDate(".minutes", minutes);
-		updateDate(".hours", hours);
-		updateDate(".days", days);
-		updateDate(".weeks", weeks);
+		function checkZero($input){
+			if( $input < 0 ){
+				return 0;
+			} else {
+				return $input;
+			}
+		}
+
+		updateDate(".seconds", checkZero(seconds));
+		updateDate(".minutes", checkZero(minutes));
+		updateDate(".hours", checkZero(hours));
+		updateDate(".days", checkZero(days));
+		updateDate(".weeks", checkZero(weeks));
 	}
 
 	function updateDate(selector, newDate){
