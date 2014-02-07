@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
 			$('#sponsor').isotope('reLayout');
 		},
 		eventHandlers: function(){
-			$('#link-anfahrt', '#link-contact').bind('click', function(){
+			$('#link-anfahrt, #link-contact').bind('click', function(){
 				if($('#navi-main').hasClass('visible')){
 					$('#navi-main').removeClass('visible');
 				}
