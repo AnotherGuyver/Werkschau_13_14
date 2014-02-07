@@ -61,6 +61,22 @@
 							<div class="absolvent-name large-12 columns"><?php echo get_the_title(); ?></div>
 							<div class="absolvent-work-subtitle large-12 columns"><span class="absolvent-work-title"><?php echo types_render_field('work-title', array('raw'=>true) ) ?></span> <?php echo types_render_field('work-subtitle', array('raw'=>true) ); ?></div>
 							<div class="absolvent-work-description large-12 columns"><?php echo types_render_field('work-description', array('raw'=>true) ) ?></div>
+							<?php if ( $mail = types_render_field('email') ): ?>
+							<div class="absolvent-mail large-12 columns">
+								<div class="mail-icon"></div>
+								<div class="mail-content"><?php echo $mail; ?></div>
+							</div>
+							<?php endif; ?>
+							<?php if ( $web = types_render_field('website') ): ?>
+							<div class="absolvent-web large-12 columns">
+								<div class="web-icon"></div>
+								<div class="web-content"><a href="<?php echo $web ?>" target="_blank"></a></div>
+							</div>
+							<?php endif; ?>
+							<?php global $post; $tax = wp_get_post_terms($post->ID, 'betreuer', array("fields" => "names"));?>
+
+							<div class="absolvent-betreuer large-12 columns">Betreuer: <?php foreach($tax as $t){ echo '<br />'.$t; } ?></div>
+							
 						</div>
 					</div>
 

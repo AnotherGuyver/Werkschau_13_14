@@ -366,7 +366,34 @@ Tags: werkschau, teaser
 							line-height: 1.4em;
 							max-height: 600px;
 							overflow: auto;
+							margin-bottom: 10px;
 						}
+
+						.absolvent-betreuer {
+							color: #999;
+							margin-top: 20px;
+							margin-bottom: 10px;
+						}
+
+						.absolvent-mail {
+							.mail-icon {
+								background: $sprite 0 -77px;
+								width: 25px;
+								height: 17px;
+							}
+
+							margin-bottom: 10px;
+						}
+
+						.absolvent-web {
+							.web-icon {
+								background: $sprite 0 -47px;
+								width: 25px;
+								height: 25px;
+							}
+						}
+
+
 					}
 				}
 			}
@@ -382,7 +409,7 @@ Tags: werkschau, teaser
 	width: 100%;
 	height: 100%;
 	z-index: 4;
-
+	display: none;
 
 	iframe {
 		width: 100%;

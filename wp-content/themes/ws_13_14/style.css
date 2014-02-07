@@ -7273,9 +7273,32 @@ a:hover {
   line-height: 1.4em;
   max-height: 600px;
   overflow: auto;
+  margin-bottom: 10px;
+}
+/* line 372, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-betreuer {
+  color: #999;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* line 378, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-mail {
+  margin-bottom: 10px;
+}
+/* line 379, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-mail .mail-icon {
+  background: url("img/icons.png") 0 -77px;
+  width: 25px;
+  height: 17px;
+}
+/* line 389, scss/style.scss */
+#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-web .web-icon {
+  background: url("img/icons.png") 0 -47px;
+  width: 25px;
+  height: 25px;
 }
 
-/* line 378, scss/style.scss */
+/* line 405, scss/style.scss */
 #teaser {
   position: absolute;
   top: 0;
@@ -7283,43 +7306,44 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 4;
+  display: none;
 }
-/* line 387, scss/style.scss */
+/* line 414, scss/style.scss */
 #teaser iframe {
   width: 100%;
   height: 100%;
 }
 
-/* line 393, scss/style.scss */
+/* line 420, scss/style.scss */
 #werkschau-section {
   top: 0;
   left: 0;
   z-index: 5;
   background: #444444;
 }
-/* line 399, scss/style.scss */
+/* line 426, scss/style.scss */
 #werkschau-section.collapsed {
   position: absolute;
   left: 100%;
 }
-/* line 404, scss/style.scss */
+/* line 431, scss/style.scss */
 #werkschau-section #werkschau-slides {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 409, scss/style.scss */
+/* line 436, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide {
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 414, scss/style.scss */
+/* line 441, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-image {
   width: 100%;
   height: auto;
 }
-/* line 419, scss/style.scss */
+/* line 446, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer {
   background: #303030;
   position: absolute;
@@ -7327,26 +7351,26 @@ a:hover {
   color: white;
   z-index: 5;
 }
-/* line 427, scss/style.scss */
+/* line 454, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer .werkschau-slide-info-inner {
   padding: 20px;
 }
 
-/* line 436, scss/style.scss */
+/* line 463, scss/style.scss */
 #footer {
   position: absolute;
   top: 100%;
   background: #303030;
 }
-/* line 442, scss/style.scss */
+/* line 469, scss/style.scss */
 #footer #footer-inner #sponsor-padding {
   padding: 20px;
 }
-/* line 445, scss/style.scss */
+/* line 472, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors {
   min-height: 150px;
 }
-/* line 447, scss/style.scss */
+/* line 474, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor {
   min-width: 150px;
   min-height: 150px;
@@ -7510,7 +7534,7 @@ a:hover {
   /* line 157, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-back,
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi #absolvent-next {
-    position: fixed;
+    position: absolute;
     top: 30%;
     width: 130px;
     height: 44px;
