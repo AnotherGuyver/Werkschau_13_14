@@ -28,6 +28,10 @@ body {
 	text-rendering: geometricPrecision;
 }
 
+#wrapper.hidden {
+	display: none;
+}
+
 html,
 body,
 #wrapper {

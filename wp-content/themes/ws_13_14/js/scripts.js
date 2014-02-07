@@ -24,6 +24,19 @@ jQuery(document).ready(function(){
 				}
 			});
 
+			var iframe = $('#teaser-player')[0];
+			var player = $f(iframe);
+
+			$('#link-absolventen').bind('click',function(){
+				player.api('pause');
+				if( $('#teaser').hasClass('visible') ){
+					$('#teaser').fadeOut('200',function(){
+						$('#teaser').removeClass('visible');
+					})
+					
+				}
+			})
+
 			$('#close-map').bind('click',function(){
 				if( !$('#anfahrt-section').hasClass('collapsed') ){
 					$('#anfahrt-section').addClass('collapsed');
@@ -76,6 +89,10 @@ jQuery(document).ready(function(){
 					$('#navi-side').removeClass('visible');
 				}
 			});
+
+			$('#wrapper').ready(function(){
+				$('#wrapper').removeClass('hidden').isotope('reLayout');
+			})
 
 			$(window).resize( this.resize );
 

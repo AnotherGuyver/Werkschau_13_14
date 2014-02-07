@@ -53,4 +53,7 @@
 				</li>
 		</div>
 	</div>
-	<div id="wrapper">
+	<div id="teaser" class="visible">
+		<iframe id="teaser-player" src="//player.vimeo.com/video/85344558?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+	<div id="wrapper" class="hidden">
