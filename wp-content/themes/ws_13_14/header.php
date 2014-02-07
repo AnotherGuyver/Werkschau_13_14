@@ -28,7 +28,7 @@
 				
 				
 			</ul>
-			<ul id="navi-side" class="row hidden"><div id="mobile-back" class="hide-for-medium-up"><img src="<?php echo get_template_directory_uri() ?>/img/backb.png" alt=""></div>
+			<ul id="navi-side" class="row hidden"><a href="#" id="mobile-back" class="hide-for-medium-up"><img src="<?php echo get_template_directory_uri() ?>/img/back.png" alt=""></a>
 				<li class="navi-element hide-for-small side-nav-link large-1 columns">
 					<a href="#" id="link-back" class="navi-link whitelink">
 						<div class="link-content">ZUR&Uuml;CK</div>
@@ -40,7 +40,7 @@
 				<?php
 				$i += 1;
 				?>
-				<li class="navi-element side-nav-link large-1 columns <?php if($i==1){echo 'top-margin';} ?>">
+				<li class="navi-element side-nav-link large-1 columns">
 					<a href="#<?php echo strtolower(str_replace(' ', '-', get_the_title() ) ); ?>" id="link-<?php echo the_title() ?>" class="navi-link whitelink">
 						<div class="link-content"><?php echo strtoupper(get_the_title()); ?></div>
 					</a>

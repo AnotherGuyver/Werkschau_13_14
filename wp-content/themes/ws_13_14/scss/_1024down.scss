@@ -30,6 +30,10 @@
 	#navi-main,
 	#navi-side {
 
+		#mobile-back {
+			width: 44px;
+		}
+
 		&.visible {
 			margin-top: 0;
 		}

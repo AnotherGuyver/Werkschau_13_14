@@ -43,11 +43,12 @@ jQuery(document).ready(function(){
 				}
 			});
 
-			$('#link-back').bind('click',function(){
+			$('#link-back, #mobile-back').bind('click',function(){
 				if( !$('#werkschau-section').hasClass('collapsed') ){
 					$('#werkschau-section').addClass('collapsed');
 					$('#navi-main').removeClass('hidden');
 					$('#navi-side').addClass('hidden');
+					$('#navi-side').removeClass('visible');
 				}
 			});
 
@@ -68,7 +69,13 @@ jQuery(document).ready(function(){
 					}
 				}
 				
-			})
+			});
+
+			$('.side-nav-link').bind('click',function(){
+				if( $('#navi-side').hasClass('visible') ){
+					$('#navi-side').removeClass('visible');
+				}
+			});
 
 			$(window).resize( this.resize );
 
