@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
 			$('#sponsor').isotope('reLayout');
 		},
 		eventHandlers: function(){
-			$('#link-anfahrt').bind('click', function(){
+			$('#link-anfahrt', '#link-contact').bind('click', function(){
 				if($('#navi-main').hasClass('visible')){
 					$('#navi-main').removeClass('visible');
 				}
@@ -163,7 +163,7 @@ jQuery(document).ready(function(){
 			});
 		},
 		calculatePadding: function(){
-			var padding = ($(window).width()%200)/2;
+			var padding = ($(window).width()%150)/2;
 			$('#padding').css({'padding': Math.floor(padding)});
 			$('#options-outer').css({'margin-left':padding});
 			console.log(padding);

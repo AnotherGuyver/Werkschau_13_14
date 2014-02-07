@@ -67,10 +67,10 @@
 								<div class="mail-content"><?php echo $mail; ?></div>
 							</div>
 							<?php endif; ?>
-							<?php if ( $web = types_render_field('website') ): ?>
+							<?php if ( $web = types_render_field('website',array('raw'=>true)) ): ?>
 							<div class="absolvent-web large-12 columns">
 								<div class="web-icon"></div>
-								<div class="web-content"><a href="<?php echo $web ?>" target="_blank"></a></div>
+								<div class="web-content"><a href="<?php echo $web ?>" target="_blank"><?php echo $web; ?></a></div>
 							</div>
 							<?php endif; ?>
 							<?php global $post; $tax = wp_get_post_terms($post->ID, 'betreuer', array("fields" => "names"));?>

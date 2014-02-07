@@ -143,7 +143,23 @@
 
 						.absolvent-info-inner {
 							margin-left: 0;
+
+							.absolvent-mail,
+							.absolvent-web {
+								.mail-icon {
+									background: $sprite 0px -317px;
+								}
+								.web-icon {
+									background: $sprite 0px -339px;
+								}
+
+								a {
+									color: white;
+								}
+							}
 						}
+
+
 
 
 					}
@@ -184,5 +200,16 @@
 	}
 }
 
+#footer {
+	#footer-inner {
+		ul {
+			height: 44px;
+
+			li {
+				line-height: 44px;
+			}
+		}
+	}
+}
 
 }

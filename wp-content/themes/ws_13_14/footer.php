@@ -3,34 +3,26 @@
 	<div id="footer" class="fullwidth">
 		<div id="footer-inner" class="row">
 			<div id="sponsor-padding" class="large-9">
-				<div id="sponsors">
+				<ul id="sponsors"class="large-block-grid-5 small-block-grid-2">
 
 					<?php 
 						$sponsoren = new WP_Query( array('post_type'=>'sponsoren') );
 						while ($sponsoren->have_posts()) : $sponsoren->the_post();?>
-							<div class="sponsor"><?php the_post_thumbnail();  ?></div>
+							<li class="sponsor"><a href="<?php echo types_render_field('sponsoren-url', array('raw'=>true)) ?>"><?php the_post_thumbnail();  ?></a></li>
 						<?php endwhile;
 					?>
-				</div>
+				</ul>
 			</div>
-			<script>
-				$('#sponsors').isotope({
-					itemSelector :'.sponsor',
-					layoutMode	: 'fitColumns',
-					sortBy : 'random',
-					resizesContainer: true,
-				});
-			</script>
 
-			<div id="footer-links" class="push-8 large-1">
-				<ul class="footer-links-container large-block-grid-2">
-					<li>
-						<a href="" class="footer-link whitelink">
+			<div id="footer-links" class="large-offset-7 small-offset-0 small-12 large-2">
+				<ul class="footer-links-container row">
+					<li class="large-2 large-offset-0 small-2 small-offset-5 columns">
+						<a href="#" id="link-contact" class="footer-link whitelink">
 							<div class="footer-link-content">KONTAKT</div>
 						</a>
 					</li>
-					<li>
-						<a href="" class="footer-link whitelink">
+					<li class="small-2 large-7 columns">
+						<a href="#" class="footer-link whitelink">
 							<div class="footer-link-content">IMPRESSUM</div>
 						</a>
 					</li>
