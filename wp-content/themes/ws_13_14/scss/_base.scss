@@ -24,6 +24,10 @@ body {
 	margin: 0;
 }
 
+body {
+	text-rendering: geometricPrecision;
+}
+
 html,
 body,
 #wrapper {

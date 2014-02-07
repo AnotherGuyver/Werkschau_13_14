@@ -3,9 +3,7 @@
 		<div id="anfahrt-info-inner">
 			<div id="anfahrt-info-content">
 				<p>
-				Hochschule Augsburg<br />
-				Fakultät für<br />
-				Gestaltung<br />
+				Hochschule Augsburg - Fakultät für Gestaltung<br />
 				</p>
 				<p>
 				Friedberger Straße 2<br />

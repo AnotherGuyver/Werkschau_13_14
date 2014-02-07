@@ -7,7 +7,7 @@
 			while( $werkschauslides->have_posts() ): $werkschauslides->the_post();
 		?>
 		
-		<li id="<?php echo strtolower(str_replace(' ', '-', get_the_title() ) );?>" class="werkschau-slide fullscreen" style="background: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>);">
+		<li id="<?php echo strtolower(str_replace(' ', '-', get_the_title() ) );?>" class="werkschau-slide fullscreen" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>);">
 			<div class="werkschau-slide-info-outer fullwidth">
 				<div class="werkschau-slide-info-inner row">
 					<div class="werkschau-slide-info-content large-offset-1 large-4 columns">

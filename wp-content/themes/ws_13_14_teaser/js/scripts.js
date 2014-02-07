@@ -1,6 +1,6 @@
 jQuery.noConflict();
 
-var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
+var deadline = new Date(2014, 1, 7, 19, 0, 0, 0);
 
 
 (function( $ ) {
@@ -91,10 +91,10 @@ var deadline = new Date(2014, 1, 7, 0, 0, 0, 0);
 		// console.log("Sekunden:"+seconds+" Minuten:"+minutes+" Stunden:"+hours+" Tage:"+days+" Wochen:"+weeks);
 
 		function checkZero($input){
-			if( $input < 0 ){
-				return 0;
-			} else {
+			if( $input > 0 ){
 				return $input;
+			} else {
+				return "0";
 			}
 		}
 

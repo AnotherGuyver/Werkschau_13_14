@@ -97,17 +97,16 @@ Tags: werkschau, teaser
 
 	#close-map-outer {
 		position: absolute;
-		right: 20px;
+		right: 24px;
 		top: 20px;
 		z-index: 20;
-		width: 70px; 
-		height: 70px;
+		width: 20px; 
+		height: 20px;
 
 		#close-map {
-			background-image: $sprite;
-			background-position: 0 0;
-			width: 70px; 
-			height: 70px;
+			width: 24px;
+			height: 24px;
+			background: $sprite 0 -18px;
 			cursor: pointer;
 		}
 	}
@@ -127,6 +126,12 @@ Tags: werkschau, teaser
 		background: $standard-dark;
 		color: white;
 		z-index: 3;
+
+		#sorting-inner {
+			.sbHolder {
+				z-index: 1;
+			}
+		}
 
 		#filter-inner,
 		#sorting-inner{
@@ -190,19 +195,31 @@ Tags: werkschau, teaser
 				cursor: pointer;
 				@include trall(400ms);
 
+				&:hover {
+					.absolvent-title {
+						opacity: 1;
+					}
+				}
+
 				.absolvent-title {
 					position: absolute;
-					bottom: 10px;
-					width: 100%;
+					font-family: "Trade Gothic Light";
+					font-size: 0.9em;
 					text-align: center;
-
+					background: rgba(255,255,255,0.7);
+					padding: 13px 0 10px;
+					width: 100%;
+					bottom: 0;
+					opacity: 0;
+					@include trall(200ms);
 				}
 			}
 
 			.absolvent-full {
 				display: none;
 				position: fixed;
-				overflow: scroll;
+				overflow: auto;
+				padding-top: 80px;
 
 				.work-picture {
 					top: 0;
@@ -212,6 +229,11 @@ Tags: werkschau, teaser
 				.work-picture,
 				.graduate-image {
 					display: none;
+					width: 100%;
+					height: 100%;
+					-webkit-background-size: cover;
+					background-size: cover;
+
 
 					&.visible {
 						display: block;
@@ -247,7 +269,8 @@ Tags: werkschau, teaser
 					}
 
 					img {
-						width: 100%;
+						width: auto;
+						height: auto;
 					}
 
 					.absolvent-navi {
@@ -262,15 +285,35 @@ Tags: werkschau, teaser
 							background: $standard-dark;
 							line-height: 35px;
 							text-align: center;
+							@include trall(200ms);
 
-							#switch-picture {
-								background: $sprite 0 0;
-								width: 23px;
-								height: 13px;
-								position: absolute;
-								right: 23px;
-								top: 9px;
+							&:hover {
+								background: $hover-orange;
 							}
+
+							&#absolvent-change-image.disabled {
+								background: #999;
+								color: #bbb;
+
+								#switch-picture {
+									display: none;
+								}
+							}
+
+							#switch-picture-wrapper {
+								
+
+								#switch-picture {
+									background: $sprite 0 0;
+									width: 23px;
+									height: 13px;
+									position: absolute;
+									right: 6%;
+									top: 9px;
+								}
+							}
+
+							
 
 							#back-arrow {
 								position: absolute;
@@ -294,22 +337,29 @@ Tags: werkschau, teaser
 
 					.absolvent-info-outer {
 						position: absolute;
-						top: 25%;
+						top: 200px;
+						font-family: $trade-r;
 
 						.absolvent-name {
-							font-size: 1.5rem;
+							font-family: $trade-b;
+							font-weight: 700;
+							font-size: 2rem;
 							margin-bottom: 10px;
-						}
 
-						.absolvent-work-title {
-							font-size: 1.3rem;
-							line-height: 1.5rem;
-							margin-bottom: 10px;
 						}
 
 						.absolvent-work-subtitle {
-							font-size: 1.2em;
+							font-size: 1.3em;
 							margin-bottom: 20px;
+							letter-spacing: 0.5px;
+						}
+
+
+						.absolvent-work-title {
+							font-family: $trade-b;
+							font-size: 1.3rem;
+							line-height: 1.5rem;
+							font-weight: 700;
 						}
 
 						.absolvent-work-description {
@@ -372,6 +422,20 @@ Tags: werkschau, teaser
 	position: absolute;
 	top: 100%;
 	background: $standard-dark;
+
+	#footer-inner {
+		#sponsor-padding {
+			padding: 20px;
+
+			#sponsors {
+				min-height: 150px;
+				.sponsor {
+					min-width: 150px;
+					min-height: 150px;
+				}
+			}
+		}
+	}
 }
 
 @import '1025up';
