@@ -20,3 +20,5 @@
 /wp-content/uploads
 
 /.sass-cache
+
+.DS_Store

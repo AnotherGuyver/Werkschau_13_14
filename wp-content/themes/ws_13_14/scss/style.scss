@@ -57,6 +57,12 @@ Tags: werkschau, teaser
 	#navi-side.hidden {
 		left: 100%;
 	}
+
+	#navi-main.hidden + #navi-side #mobile-back {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
 }
 
 // SECTIONS
@@ -289,7 +295,7 @@ Tags: werkschau, teaser
 							@include trall(200ms);
 
 							&:hover {
-								background: $hover-orange;
+								color: $hover-blue;
 							}
 
 							&#absolvent-change-image.disabled {
@@ -451,6 +457,21 @@ Tags: werkschau, teaser
 			position: relative;
 			height: 100%;
 			width: 100%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			font-family: $trade-r;
+
+			&#werkschau {
+				.werkschau-slide-info-outer {
+					background: none;
+					top: 25%;
+					color: $standard-dark;
+
+					.werkschau-slide-info-inner {
+
+					}
+				}
+			}
 			
 			.werkschau-slide-image {
 				width: 100%;

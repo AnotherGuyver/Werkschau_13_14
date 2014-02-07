@@ -86,6 +86,12 @@
 		.werkschau-slide {
 			-webkit-background-size: cover;
 			background-size: cover;
+
+			&#werkschau {
+				.werkschau-slide-info-outer {
+					top: 0;
+				}
+			}
 		}
 	}
 }

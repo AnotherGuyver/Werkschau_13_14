@@ -41,7 +41,7 @@
 				<?php
 				$i += 1;
 				?>
-				<li class="navi-element side-nav-link large-1 columns">
+				<li class="navi-element side-nav-link large-1 columns <?php if($i==1){echo "top-margin";} ?>">
 					<a href="#<?php echo strtolower(str_replace(' ', '-', get_the_title() ) ); ?>" id="link-<?php echo the_title() ?>" class="navi-link whitelink">
 						<div class="link-content"><?php echo strtoupper(get_the_title()); ?></div>
 					</a>
