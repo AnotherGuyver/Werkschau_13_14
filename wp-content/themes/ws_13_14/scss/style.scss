@@ -508,7 +508,38 @@ Tags: werkschau, teaser
 				.sponsor {
 					padding: 30px;
 					text-align: center;
+					position: relative;
+
+					.sponsor-description {
+						display: none;
+						font-family: $trade-r;
+						position: absolute;
+						width: 100%;
+						height: auto;
+						top: -20px;
+						left: 0;
+						padding: 10px;
+						background: $standard-light;
+						color: white;
+						font-size: 0.8em;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+
+						.sponoren-link {
+							margin-top: 10px;
+							display: block;
+							position: relative;
+							line-height: 40px;
+						}
+
+						&.visible {
+							display: block;
+						}
+					}
 				}
+
+
 			}
 		}
 

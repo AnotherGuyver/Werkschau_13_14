@@ -33,7 +33,12 @@ jQuery(document).ready(function(){
 					$('#teaser').fadeOut('200',function(){
 						$('#teaser').removeClass('visible');
 					})
-					
+				}
+
+				if( $('.absolvent-full.visible') ){
+					$('.absolvent-full.visible').fadeOut('200',function(){
+						$('.absolvent-full.visible').removeClass('visible');
+					})
 				}
 			})
 
@@ -120,6 +125,16 @@ jQuery(document).ready(function(){
 					$(fade).removeClass('visible');
 				});
 			}
+
+			$('.sponsor').bind('click',function(){
+				var a = this;
+				if( $('.sponsor-description').hasClass('visible') ){
+					$('.sponsor-description').removeClass('visible')
+				}
+
+				$('.sponsor-description',this).addClass('visible');
+
+			})
 
 			$('.absolvent-full').each(function(i,e){
 				var that = e;

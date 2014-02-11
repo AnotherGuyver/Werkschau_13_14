@@ -7398,16 +7398,45 @@ a:hover {
 #footer #footer-inner #sponsor-padding #sponsors .sponsor {
   padding: 30px;
   text-align: center;
+  position: relative;
 }
-/* line 516, scss/style.scss */
+/* line 513, scss/style.scss */
+#footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description {
+  display: none;
+  font-family: "Trade Gothic", "Helvetica", Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -20px;
+  left: 0;
+  padding: 10px;
+  background: #444444;
+  color: white;
+  font-size: 0.8em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 529, scss/style.scss */
+#footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description .sponoren-link {
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  line-height: 40px;
+}
+/* line 536, scss/style.scss */
+#footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description.visible {
+  display: block;
+}
+/* line 547, scss/style.scss */
 #footer #footer-inner #footer-links {
   height: 44px;
 }
-/* line 519, scss/style.scss */
+/* line 550, scss/style.scss */
 #footer #footer-inner #footer-links ul {
   height: 44px;
 }
-/* line 521, scss/style.scss */
+/* line 552, scss/style.scss */
 #footer #footer-inner #footer-links ul li {
   line-height: 44px;
   text-align: center;
