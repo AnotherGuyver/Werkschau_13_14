@@ -7082,13 +7082,74 @@ a:hover {
   background: #7cceeb;
 }
 /* line 184, scss/style.scss */
+#main-section .absolvent-navi {
+  position: absolute;
+  display: none;
+  top: 120px;
+  z-index: 5;
+}
+/* line 190, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button {
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background: #303030;
+  line-height: 35px;
+  text-align: center;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+/* line 199, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button:hover {
+  color: #7cceeb;
+}
+/* line 203, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button#absolvent-change-image.disabled {
+  background: #999;
+  color: #bbb;
+}
+/* line 207, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button#absolvent-change-image.disabled #switch-picture {
+  display: none;
+}
+/* line 215, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button #switch-picture-wrapper #switch-picture {
+  background: url("img/icons.png") 0 0;
+  width: 23px;
+  height: 13px;
+  position: absolute;
+  right: 6%;
+  top: 9px;
+}
+/* line 227, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button #back-arrow {
+  position: absolute;
+  background: url("img/icons.png") 0 -111px;
+  top: 8px;
+  left: 12px;
+  width: 7px;
+  height: 14px;
+}
+/* line 236, scss/style.scss */
+#main-section .absolvent-navi .absolvent-button #next-arrow {
+  position: absolute;
+  background: url("img/icons.png") 0 -130px;
+  top: 8px;
+  right: 12px;
+  width: 7px;
+  height: 14px;
+}
+/* line 247, scss/style.scss */
 #main-section #isotope {
   min-height: 100%;
   max-width: 100%;
   height: auto;
   overflow-y: scroll;
 }
-/* line 190, scss/style.scss */
+/* line 253, scss/style.scss */
 #main-section #isotope #isotope-inner {
   position: relative;
   min-height: 100%;
@@ -7096,7 +7157,7 @@ a:hover {
   overflow: auto;
   position: absolute;
 }
-/* line 198, scss/style.scss */
+/* line 261, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent {
   position: relative;
   height: 150px;
@@ -7108,11 +7169,11 @@ a:hover {
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
-/* line 206, scss/style.scss */
+/* line 269, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent:hover .absolvent-title {
   opacity: 1;
 }
-/* line 211, scss/style.scss */
+/* line 274, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent .absolvent-title {
   position: absolute;
   font-family: "Trade Gothic Light";
@@ -7129,19 +7190,19 @@ a:hover {
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-/* line 225, scss/style.scss */
+/* line 288, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full {
   display: none;
   position: fixed;
   overflow: auto;
   padding-top: 80px;
 }
-/* line 231, scss/style.scss */
+/* line 294, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full .work-picture {
   top: 0;
   position: absolute;
 }
-/* line 237, scss/style.scss */
+/* line 300, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full .work-picture,
 #main-section #isotope #isotope-inner .absolvent-full .graduate-image {
   display: none;
@@ -7150,22 +7211,22 @@ a:hover {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 245, scss/style.scss */
+/* line 308, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full .work-picture.visible,
 #main-section #isotope #isotope-inner .absolvent-full .graduate-image.visible {
   display: block;
 }
-/* line 251, scss/style.scss */
+/* line 314, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full .work-picture-mobile,
 #main-section #isotope #isotope-inner .absolvent-full .graduate-image-mobile {
   display: none;
 }
-/* line 254, scss/style.scss */
+/* line 317, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full .work-picture-mobile.visible,
 #main-section #isotope #isotope-inner .absolvent-full .graduate-image-mobile.visible {
   display: block;
 }
-/* line 259, scss/style.scss */
+/* line 322, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible {
   width: 100%;
   height: 100%;
@@ -7173,7 +7234,7 @@ a:hover {
   left: 0;
   z-index: 4;
 }
-/* line 267, scss/style.scss */
+/* line 330, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-close {
   position: absolute;
   top: 100px;
@@ -7184,142 +7245,83 @@ a:hover {
   z-index: 4;
   cursor: pointer;
 }
-/* line 278, scss/style.scss */
+/* line 341, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible img {
   width: auto;
   height: auto;
 }
-/* line 283, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi {
-  position: absolute;
-  top: 120px;
-  z-index: 1;
-}
-/* line 288, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button {
-  height: 30px;
-  cursor: pointer;
-  color: white;
-  background: #303030;
-  line-height: 35px;
-  text-align: center;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-/* line 297, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button:hover {
-  color: #7cceeb;
-}
-/* line 301, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button#absolvent-change-image.disabled {
-  background: #999;
-  color: #bbb;
-}
-/* line 305, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button#absolvent-change-image.disabled #switch-picture {
-  display: none;
-}
-/* line 313, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #switch-picture-wrapper #switch-picture {
-  background: url("img/icons.png") 0 0;
-  width: 23px;
-  height: 13px;
-  position: absolute;
-  right: 6%;
-  top: 9px;
-}
-/* line 325, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #back-arrow {
-  position: absolute;
-  background: url("img/icons.png") 0 -111px;
-  top: 8px;
-  left: 12px;
-  width: 7px;
-  height: 14px;
-}
-/* line 334, scss/style.scss */
-#main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-navi .absolvent-button #next-arrow {
-  position: absolute;
-  background: url("img/icons.png") 0 -130px;
-  top: 8px;
-  right: 12px;
-  width: 7px;
-  height: 14px;
-}
-/* line 345, scss/style.scss */
+/* line 348, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer {
   position: absolute;
   top: 200px;
   font-family: "Trade Gothic", "Helvetica", Arial, sans-serif;
 }
-/* line 350, scss/style.scss */
+/* line 353, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-name {
   font-family: "Trade Gothic Bold", "Helvetica", Arial, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 10px;
 }
-/* line 358, scss/style.scss */
+/* line 361, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-subtitle {
   font-size: 1.3em;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
-/* line 365, scss/style.scss */
+/* line 368, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-title {
   font-family: "Trade Gothic Bold", "Helvetica", Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-weight: 700;
 }
-/* line 372, scss/style.scss */
+/* line 375, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-work-description {
   line-height: 1.4em;
   max-height: 600px;
   overflow: auto;
   margin-bottom: 20px;
 }
-/* line 379, scss/style.scss */
+/* line 382, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-betreuer {
   color: #999;
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 1.2em;
 }
-/* line 386, scss/style.scss */
+/* line 389, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-mail {
   margin-bottom: 10px;
 }
-/* line 387, scss/style.scss */
+/* line 390, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-mail .mail-icon {
   background: url("img/icons.png") 0 -77px;
   width: 25px;
   height: 17px;
   float: left;
 }
-/* line 398, scss/style.scss */
+/* line 401, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-web .web-icon {
   background: url("img/icons.png") 0 -47px;
   width: 25px;
   height: 25px;
   float: left;
 }
-/* line 406, scss/style.scss */
+/* line 409, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .web-content {
   margin-left: 32px;
   line-height: 30px;
 }
-/* line 411, scss/style.scss */
+/* line 414, scss/style.scss */
 #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .mail-content {
   margin-left: 32px;
   line-height: 20px;
 }
 
-/* line 425, scss/style.scss */
+/* line 428, scss/style.scss */
 #teaser {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -7327,31 +7329,31 @@ a:hover {
   height: 100%;
   z-index: 4;
 }
-/* line 433, scss/style.scss */
+/* line 437, scss/style.scss */
 #teaser iframe {
   width: 100%;
   height: 100%;
 }
 
-/* line 439, scss/style.scss */
+/* line 443, scss/style.scss */
 #werkschau-section {
   top: 0;
   left: 0;
   z-index: 5;
   background: #444444;
 }
-/* line 445, scss/style.scss */
+/* line 449, scss/style.scss */
 #werkschau-section.collapsed {
   position: absolute;
   left: 100%;
 }
-/* line 450, scss/style.scss */
+/* line 454, scss/style.scss */
 #werkschau-section #werkschau-slides {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 455, scss/style.scss */
+/* line 459, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide {
   position: relative;
   height: 100%;
@@ -7360,18 +7362,18 @@ a:hover {
   background-size: cover;
   font-family: "Trade Gothic", "Helvetica", Arial, sans-serif;
 }
-/* line 464, scss/style.scss */
+/* line 468, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide#werkschau .werkschau-slide-info-outer {
   background: none;
   top: 25%;
   color: #303030;
 }
-/* line 475, scss/style.scss */
+/* line 479, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-image {
   width: 100%;
   height: auto;
 }
-/* line 480, scss/style.scss */
+/* line 484, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer {
   background: #303030;
   position: absolute;
@@ -7379,28 +7381,28 @@ a:hover {
   color: white;
   z-index: 5;
 }
-/* line 488, scss/style.scss */
+/* line 492, scss/style.scss */
 #werkschau-section #werkschau-slides .werkschau-slide .werkschau-slide-info-outer .werkschau-slide-info-inner {
   padding: 20px;
 }
 
-/* line 497, scss/style.scss */
+/* line 501, scss/style.scss */
 #footer {
   position: absolute;
   top: 100%;
   background: #303030;
 }
-/* line 505, scss/style.scss */
+/* line 509, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors {
   min-height: 150px;
 }
-/* line 508, scss/style.scss */
+/* line 512, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor {
   padding: 30px;
   text-align: center;
   position: relative;
 }
-/* line 513, scss/style.scss */
+/* line 517, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description {
   display: none;
   font-family: "Trade Gothic", "Helvetica", Arial, sans-serif;
@@ -7417,26 +7419,26 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 529, scss/style.scss */
+/* line 533, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description .sponoren-link {
   margin-top: 10px;
   display: block;
   position: relative;
   line-height: 40px;
 }
-/* line 536, scss/style.scss */
+/* line 540, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description.visible {
   display: block;
 }
-/* line 547, scss/style.scss */
+/* line 551, scss/style.scss */
 #footer #footer-inner #footer-links {
   height: 44px;
 }
-/* line 550, scss/style.scss */
+/* line 554, scss/style.scss */
 #footer #footer-inner #footer-links ul {
   height: 44px;
 }
-/* line 552, scss/style.scss */
+/* line 556, scss/style.scss */
 #footer #footer-inner #footer-links ul li {
   line-height: 44px;
   text-align: center;

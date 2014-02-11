@@ -20,6 +20,13 @@
 			</select>
 		</div>
 	</div>
+
+	<div class="absolvent-navi row">
+		<div id="absolvent-back" class="absolvent-button large-1 columns large-offset-1 small-offset-0"><div id="back-arrow">&nbsp;</div>VORHERIGER</div>
+		<div id="absolvent-change-image" class="absolvent-button large-1 columns hide-for-medium-down <?php echo $disabled ?>"><div id="switch-picture-wrapper">ARBEITSBILD<div id="switch-picture">&nbsp;</div></div></div>
+		<div id="absolvent-next" class="absolvent-button large-1 columns pull-5">NÄCHSTER<div id="next-arrow">&nbsp;</div></div>
+	</div>
+	
 	<div id="padding">
 		<div id="isotope">
 			<div id="isotope-inner">
@@ -50,12 +57,7 @@
 					<div class="absolvent-close">&nbsp;</div>
 					<div class="graduate-image visible" style="background-image: url('<?php echo types_render_field('graduate-image', array('raw'=>true) ) ?>');">&nbsp;</div>
 					<img class="graduate-image-mobile visible" src="<?php echo types_render_field('graduate-image-mobile', array('raw'=>true) ) ?>" alt="<?php echo get_the_title(); ?>">
-					
-					<div class="absolvent-navi row">
-						<div id="absolvent-back" class="absolvent-button large-1 columns large-offset-1 small-offset-0"><div id="back-arrow">&nbsp;</div>VORHERIGER</div>
-						<div id="absolvent-change-image" class="absolvent-button large-1 columns hide-for-medium-down <?php echo $disabled ?>"><div id="switch-picture-wrapper">ARBEITSBILD<div id="switch-picture">&nbsp;</div></div></div>
-						<div id="absolvent-next" class="absolvent-button large-1 columns pull-5">NÄCHSTER<div id="next-arrow">&nbsp;</div></div>
-					</div>
+				
 					<div class="absolvent-info-outer row">
 						<div class="absolvent-info-inner large-4 large-offset-1 columns">
 							<div class="absolvent-name large-12 columns"><?php echo get_the_title(); ?></div>

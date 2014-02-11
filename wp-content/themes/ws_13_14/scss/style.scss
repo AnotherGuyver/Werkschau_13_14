@@ -181,6 +181,69 @@ Tags: werkschau, teaser
 		}
 	}
 
+	.absolvent-navi {
+		position: absolute;
+		display: none;
+		top: 120px;
+		z-index: 5;
+
+		.absolvent-button {
+			height: 30px;
+			cursor: pointer;
+			color: white;
+			background: $standard-dark;
+			line-height: 35px;
+			text-align: center;
+			@include trall(200ms);
+
+			&:hover {
+				color: $hover-blue;
+			}
+
+			&#absolvent-change-image.disabled {
+				background: #999;
+				color: #bbb;
+
+				#switch-picture {
+					display: none;
+				}
+			}
+
+			#switch-picture-wrapper {
+				
+
+				#switch-picture {
+					background: $sprite 0 0;
+					width: 23px;
+					height: 13px;
+					position: absolute;
+					right: 6%;
+					top: 9px;
+				}
+			}
+
+			
+
+			#back-arrow {
+				position: absolute;
+				background: $sprite 0 -111px;
+				top: 8px;
+				left: 12px;
+				width: 7px;
+				height: 14px;
+			}
+
+			#next-arrow {
+				position: absolute;
+				background: $sprite 0 -130px;
+				top: 8px;
+				right: 12px;
+				width: 7px;
+				height: 14px;
+			}
+		}
+	}
+
 	#isotope {
 		min-height: 100%;
 		max-width: 100%;
@@ -280,67 +343,7 @@ Tags: werkschau, teaser
 						height: auto;
 					}
 
-					.absolvent-navi {
-						position: absolute;
-						top: 120px;
-						z-index: 1;
-
-						.absolvent-button {
-							height: 30px;
-							cursor: pointer;
-							color: white;
-							background: $standard-dark;
-							line-height: 35px;
-							text-align: center;
-							@include trall(200ms);
-
-							&:hover {
-								color: $hover-blue;
-							}
-
-							&#absolvent-change-image.disabled {
-								background: #999;
-								color: #bbb;
-
-								#switch-picture {
-									display: none;
-								}
-							}
-
-							#switch-picture-wrapper {
-								
-
-								#switch-picture {
-									background: $sprite 0 0;
-									width: 23px;
-									height: 13px;
-									position: absolute;
-									right: 6%;
-									top: 9px;
-								}
-							}
-
-							
-
-							#back-arrow {
-								position: absolute;
-								background: $sprite 0 -111px;
-								top: 8px;
-								left: 12px;
-								width: 7px;
-								height: 14px;
-							}
-
-							#next-arrow {
-								position: absolute;
-								background: $sprite 0 -130px;
-								top: 8px;
-								right: 12px;
-								width: 7px;
-								height: 14px;
-							}
-						}
-					}
+					
 
 					.absolvent-info-outer {
 						position: absolute;
@@ -423,6 +426,7 @@ Tags: werkschau, teaser
 }
 
 #teaser {
+	display: none;
 	position: absolute;
 	top: 0;
 	right: 0;
