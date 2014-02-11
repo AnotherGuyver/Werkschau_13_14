@@ -7569,7 +7569,11 @@ a:hover {
     height: 40px;
     background: #444444;
   }
-  /* line 126, scss/_1024down.scss */
+  /* line 124, scss/_1024down.scss */
+  #main-section .absolvent-navi {
+    position: absolute;
+  }
+  /* line 128, scss/_1024down.scss */
   #main-section .absolvent-navi #absolvent-back,
   #main-section .absolvent-navi #absolvent-next {
     position: absolute;
@@ -7578,36 +7582,36 @@ a:hover {
     height: 44px;
     line-height: 44px;
   }
-  /* line 134, scss/_1024down.scss */
+  /* line 136, scss/_1024down.scss */
   #main-section .absolvent-navi #absolvent-back #back-arrow,
   #main-section .absolvent-navi #absolvent-back #next-arrow,
   #main-section .absolvent-navi #absolvent-next #back-arrow,
   #main-section .absolvent-navi #absolvent-next #next-arrow {
     top: 13px;
   }
-  /* line 139, scss/_1024down.scss */
+  /* line 141, scss/_1024down.scss */
   #main-section .absolvent-navi #absolvent-next {
     right: 0;
   }
-  /* line 143, scss/_1024down.scss */
+  /* line 145, scss/_1024down.scss */
   #main-section .absolvent-navi #absolvent-back {
     left: 0;
     margin-left: 0;
   }
-  /* line 151, scss/_1024down.scss */
+  /* line 153, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full {
     padding-top: 0;
   }
-  /* line 155, scss/_1024down.scss */
+  /* line 157, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full .work-picture,
   #main-section #isotope #isotope-inner .absolvent-full .graduate-image {
     display: none !important;
   }
-  /* line 161, scss/_1024down.scss */
+  /* line 163, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-close {
     top: 62px;
   }
-  /* line 165, scss/_1024down.scss */
+  /* line 167, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer {
     position: relative;
     background: #303030;
@@ -7618,35 +7622,35 @@ a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 175, scss/_1024down.scss */
+  /* line 177, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner {
     margin-left: 0;
   }
-  /* line 180, scss/_1024down.scss */
+  /* line 182, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-mail .mail-icon,
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-web .mail-icon {
     background: url("img/icons.png") 0px -317px;
   }
-  /* line 183, scss/_1024down.scss */
+  /* line 185, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-mail .web-icon,
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-web .web-icon {
     background: url("img/icons.png") 0px -339px;
   }
-  /* line 187, scss/_1024down.scss */
+  /* line 189, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-mail a,
   #main-section #isotope #isotope-inner .absolvent-full.visible .absolvent-info-outer .absolvent-info-inner .absolvent-web a {
     color: white;
   }
-  /* line 198, scss/_1024down.scss */
+  /* line 200, scss/_1024down.scss */
   #main-section #isotope #isotope-inner .absolvent-full.visible .graduate-image-mobile {
     margin-top: 44px;
   }
 
-  /* line 213, scss/_1024down.scss */
+  /* line 215, scss/_1024down.scss */
   #footer #footer-inner ul {
     height: 44px;
   }
-  /* line 216, scss/_1024down.scss */
+  /* line 218, scss/_1024down.scss */
   #footer #footer-inner ul li {
     line-height: 44px;
   }
