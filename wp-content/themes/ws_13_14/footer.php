@@ -8,7 +8,7 @@
 					<?php 
 						$sponsoren = new WP_Query( array('post_type'=>'sponsoren') );
 						while ($sponsoren->have_posts()) : $sponsoren->the_post();?>
-							<li class="sponsor"><a href="javascript:"><?php the_post_thumbnail();  ?></a><div class="sponsor-description"><?php the_content(); ?><?php if( types_render_field('sponsoren-url',array('raw'=>true)) ){ ?><a href="<?php echo types_render_field('sponsoren-url',array('raw'=>true)); ?>" class="sponsoren-link whitelink"><?php echo types_render_field('sponsoren-url',array('raw'=>true)) ?></a><?php }; ?></div></li>
+							<li class="sponsor"><a href="javascript:"><?php the_post_thumbnail();  ?></a><div class="sponsor-description"><?php the_content(); ?><?php if( types_render_field('sponsoren-url',array('raw'=>true)) ){ ?><a href="<?php echo types_render_field('sponsoren-url',array('raw'=>true)); ?>" class="sponsoren-link whitelink"><?php echo get_the_title(); ?></a><?php }; ?></div></li>
 						<?php endwhile;
 					?>
 				</ul>
