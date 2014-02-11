@@ -22,3 +22,9 @@
 /.sass-cache
 
 .DS_Store
+
+/wp-content/themes/ws_13_14/.sass-cache/760aeeba2398b39a7dacd4cda2dc0df467a1c7be/_1024down.scssc
+/wp-content/themes/ws_13_14/.sass-cache/760aeeba2398b39a7dacd4cda2dc0df467a1c7be/_base.scssc
+/wp-content/themes/ws_13_14/.sass-cache/760aeeba2398b39a7dacd4cda2dc0df467a1c7be/_settings.scssc
+/wp-content/themes/ws_13_14/.sass-cache/760aeeba2398b39a7dacd4cda2dc0df467a1c7be/style.scssc
+/wp-content/themes/ws_13_14/compass_app_log.txt

@@ -24,6 +24,12 @@ jQuery(document).ready(function(){
 				}
 			});
 
+			function hideMainNav(){
+				if($('#navi-main').hasClass('visible')){
+					$('#navi-main').removeClass('visible');
+				};
+			}
+
 			var iframe = $('#teaser-player')[0];
 			var player = $f(iframe);
 
@@ -40,6 +46,8 @@ jQuery(document).ready(function(){
 						$('.absolvent-full.visible').removeClass('visible');
 					})
 				}
+
+				hideMainNav();
 			})
 
 			$('#close-map').bind('click',function(){
@@ -50,9 +58,7 @@ jQuery(document).ready(function(){
 
 			$('#link-werkschau').bind('click',function(){
 		
-				if($('#navi-main').hasClass('visible')){
-					$('#navi-main').removeClass('visible');
-				}
+				hideMainNav();
 		
 				if( $('#werkschau-section').hasClass('collapsed') ){
 					$('#werkschau-section').removeClass('collapsed');

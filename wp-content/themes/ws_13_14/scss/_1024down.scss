@@ -121,6 +121,31 @@
 		}
 	}
 
+	.absolvent-navi {
+		#absolvent-back,
+		#absolvent-next {
+			position: absolute;
+			top: 30%;
+			width: 130px;
+			height: 44px;
+			line-height: 44px;
+
+			#back-arrow,
+			#next-arrow {
+				top: 13px;
+			}
+		}
+
+		#absolvent-next {
+			right: 0;
+		}
+
+		#absolvent-back {
+			left: 0;
+			margin-left: 0;
+		}
+	}
+
 	#isotope {
 		#isotope-inner {
 			.absolvent-full {
@@ -174,30 +199,7 @@
 						margin-top: 44px;
 					}
 
-					.absolvent-navi {
-						#absolvent-back,
-						#absolvent-next {
-							position: absolute;
-							top: 30%;
-							width: 130px;
-							height: 44px;
-							line-height: 44px;
-
-							#back-arrow,
-							#next-arrow {
-								top: 13px;
-							}
-						}
-
-						#absolvent-next {
-							right: 0;
-						}
-
-						#absolvent-back {
-							left: 0;
-							margin-left: 0;
-						}
-					}
+					
 				}
 
 
