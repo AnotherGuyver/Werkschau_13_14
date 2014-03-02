@@ -22,7 +22,7 @@
 						</a>
 					</li>
 					<li class="small-2 large-7 columns">
-						<a href="#" class="footer-link whitelink">
+						<a href="#" id="link-impressum" class="footer-link whitelink">
 							<div class="footer-link-content">IMPRESSUM</div>
 						</a>
 					</li>

@@ -2,6 +2,7 @@
 <?php include('anfahrt.php'); ?>
 <?php include ('main.php'); ?>
 <?php include('werkschau.php'); ?>
+<?php include('impressum.php') ?>
 
 <script>
 $(document).ready(function(){

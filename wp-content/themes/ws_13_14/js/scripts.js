@@ -47,8 +47,18 @@ jQuery(document).ready(function(){
 					})
 				}
 
+				if( $('#impressum-section').hasClass('visible') ){
+					$('#impressum-section').removeClass('visible');
+				}
+
 				hideMainNav();
 			})
+
+			$('#link-impressum').bind('click', function(){
+				if( !$('#impressum-section').hasClass('visible') ){
+					$('#impressum-section').addClass('visible');
+				}
+			});
 
 			$('#close-map').bind('click',function(){
 				if( !$('#anfahrt-section').hasClass('collapsed') ){

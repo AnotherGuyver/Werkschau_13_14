@@ -496,6 +496,22 @@ Tags: werkschau, teaser
 	}
 }
 
+#impressum-section {
+	font-family: $trade;
+	position: absolute;
+	background: $bg;
+	z-index: 3;
+	padding: $nav-height 10px 10px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	top: -100%;
+
+	&.visible {
+		top: 0;
+	}
+}
+
 #footer {
 	position: absolute;
 	top: 100%;
@@ -506,6 +522,7 @@ Tags: werkschau, teaser
 
 			#sponsors {
 				min-height: 150px;
+				height: auto;
 
 				.sponsor {
 					padding: 30px;

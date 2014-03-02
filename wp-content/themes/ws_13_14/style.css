@@ -7385,22 +7385,40 @@ a:hover {
 }
 
 /* line 499, scss/style.scss */
+#impressum-section {
+  font-family: "Trade Gothic Light", "Helvetica", Arial, sans-serif;
+  position: absolute;
+  background: #ebebe8;
+  z-index: 3;
+  padding: 80px 10px 10px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  top: -100%;
+}
+/* line 510, scss/style.scss */
+#impressum-section.visible {
+  top: 0;
+}
+
+/* line 515, scss/style.scss */
 #footer {
   position: absolute;
   top: 100%;
   background: #303030;
 }
-/* line 507, scss/style.scss */
+/* line 523, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors {
   min-height: 150px;
+  height: auto;
 }
-/* line 510, scss/style.scss */
+/* line 527, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor {
   padding: 30px;
   text-align: center;
   position: relative;
 }
-/* line 515, scss/style.scss */
+/* line 532, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description {
   display: none;
   font-family: "Trade Gothic", "Helvetica", Arial, sans-serif;
@@ -7417,26 +7435,26 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 531, scss/style.scss */
+/* line 548, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description .sponoren-link {
   margin-top: 10px;
   display: block;
   position: relative;
   line-height: 40px;
 }
-/* line 538, scss/style.scss */
+/* line 555, scss/style.scss */
 #footer #footer-inner #sponsor-padding #sponsors .sponsor .sponsor-description.visible {
   display: block;
 }
-/* line 549, scss/style.scss */
+/* line 566, scss/style.scss */
 #footer #footer-inner #footer-links {
   height: 44px;
 }
-/* line 552, scss/style.scss */
+/* line 569, scss/style.scss */
 #footer #footer-inner #footer-links ul {
   height: 44px;
 }
-/* line 554, scss/style.scss */
+/* line 571, scss/style.scss */
 #footer #footer-inner #footer-links ul li {
   line-height: 44px;
   text-align: center;
@@ -7646,11 +7664,16 @@ a:hover {
     margin-top: 44px;
   }
 
-  /* line 215, scss/_1024down.scss */
+  /* line 213, scss/_1024down.scss */
+  #impressum-section {
+    padding: 44px 10px 10px 10px;
+  }
+
+  /* line 219, scss/_1024down.scss */
   #footer #footer-inner ul {
     height: 44px;
   }
-  /* line 218, scss/_1024down.scss */
+  /* line 222, scss/_1024down.scss */
   #footer #footer-inner ul li {
     line-height: 44px;
   }
